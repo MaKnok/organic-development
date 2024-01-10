@@ -1,0 +1,35 @@
+.container-fluid{
+
+  img.img-fluid {
+    width: 18rem;
+  }
+
+  input.form-control{
+    background-color: var(--white) !important;
+  }
+
+  .buttons-wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button{
+      width: 48%;
+    }
+  }
+
+  h5.new-user > a{
+    color: var(--brown);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 35rem;
+  }
+}
+
+

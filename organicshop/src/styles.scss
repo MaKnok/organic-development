@@ -1,0 +1,200 @@
+/***_Font Stack_***/
+$font-stack: 'Fira Sans', sans-serif;
+
+$green: #82A700;
+$dark-green: #248B00;
+$brown: #503D0E;
+$orange: #E16409;
+$yellow: #E1CC09;
+$white:#FFF;
+
+/***_Secondary Color Scheme_***/
+$pastel-green: #B1D044;
+$pastel-dark-green: #66B749;
+$pastel-brown: #937838 ;
+$pastel-orange: #E7B28B;
+$pastel-yellow: #F1E680;
+
+/***_Tertiary Color Scheme_***/
+$transparent-green: #E6FB9D;
+$transparent-dark-green: #D2E7CB;
+$transparent-brown: #DDD7C8 ;
+$transparent-orange: #F5E2D5;
+$transparent-yellow: #FFF9BE;
+
+/***_Active Color Scheme_***/
+$active-green: #648000;
+$active-dark-green: #1b6600;
+$active-brown: #3c2e0a;
+$active-orange: #c05000;
+$active-yellow: #bfac00;
+
+/***_Danger Color Scheme_***/
+$danger-red:#ba2800;
+
+:root{
+  --green: #{$green};
+  --dark-green: #{$dark-green};
+  --brown: #{$brown};
+  --orange: #{$orange};
+  --yellow: #{$yellow};
+  --white: #{$white};
+
+  --pastel-green: #{$pastel-green};
+  --pastel-dark-green: #{$pastel-dark-green};
+  --pastel-brown: #{$pastel-brown};
+  --pastel-orange: #{$pastel-orange};
+  --pastel-yellow: #{$pastel-yellow};
+
+  --transparent-green: #{$transparent-green};
+  --transparent-dark-green: #{$transparent-dark-green};
+  --transparent-brown: #{$transparent-brown};
+  --transparent-orange: #{$transparent-orange};
+  --transparent-yellow: #{$transparent-yellow};
+
+  --active-green: #{$active-green};
+  --active-dark-green: #{$active-dark-green};
+  --active-brown: #{$active-brown};
+  --active-orange: #{$active-orange};
+  --active-yellow: #{$active-yellow};
+
+  --danger-red: #{$danger-red};
+}
+
+body {
+  font: 100% $font-stack !important;
+  color: $dark-green !important;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none !important;
+  color: $brown;
+}
+
+.form-group{
+
+  select.form-control > option.list-op:checked,
+  select.form-control > option.list-op:hover {
+      background-color: $active-dark-green ;
+      color: $white; 
+  }
+
+  label{
+    font-size: 14pt;
+  }
+
+  input.form-control, 
+  select.form-control{
+    font-size: 14pt;
+    height: 2.25em;
+    color: $brown;
+    border: 0;
+  }
+
+  .items-form-control{
+    border: 2px solid $brown !important;
+    color: $brown;
+  }
+
+  select.form-control option.list-op:checked {
+    background-color: $active-dark-green;
+    color: $white; 
+  }
+
+  .form-check-input:checked{
+    background-color: $brown;
+    border-color:$active-brown !important;
+  }
+
+  span.input-group-text{
+    color: $white;
+    background-color: $brown;
+  }
+
+}
+
+button{
+  font-size: 14pt !important;
+  height: 2em !important;
+
+  .fa{
+    color: $white;
+  }
+}
+
+.btn.btn-primary {
+  background-color: $dark-green;
+  border: 0;
+  &:hover,
+  &:active,
+  &:focus{
+    background-color: $active-dark-green !important;
+  }
+  &:disabled{
+    background-color: $pastel-dark-green;
+  }
+}
+
+.btn.btn-secondary{
+  background-color: $green;
+  border: 0;
+  &:hover,
+  &:active,
+  &:focus{
+    background-color: $active-green !important;
+  }
+  &:disabled{
+    background-color: $pastel-green;
+  }
+}
+
+.btn.btn-success{
+  background-color: $green;
+  border: 0;
+  &:hover,
+  &:active,
+  &:focus{
+    background-color: $active-green !important;
+  }
+  &:disabled{
+    background-color: $pastel-green;
+  }
+}
+
+.btn.btn-warning{
+  background-color: $yellow;
+  border: 0;
+  &:hover,
+  &:active,
+  &:focus{
+    background-color: $active-yellow !important;
+  }
+  &:disabled{
+    background-color: $pastel-yellow;
+  }
+}
+
+.btn.btn-danger{
+  background-color: $orange;
+  border: 0;
+  &:hover,
+  &:active,
+  &:focus{
+    background-color: $active-orange !important;
+  }
+  &:disabled{
+    background-color: $pastel-orange;
+  }
+}
+
+.invalid-feedback{
+  display:block !important;
+  color: $danger-red !important;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";

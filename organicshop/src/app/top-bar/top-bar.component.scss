@@ -1,0 +1,73 @@
+.logged-in-top-bar{
+  background-color: var(--white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-top-bar{
+  background-color: transparent;
+}
+
+.logged-in-wrapper{
+  width: 100%;
+}
+
+.logged-in-navbar{
+  width: 100%;
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  img.logo-img{
+    width: 7em;
+  }
+
+  .mr-1{
+    margin-right: 0.5em;
+  }
+
+  .mr-05{
+    margin-right: 0.25em;
+  }
+
+  a.mr-2{
+    color:var(--dark-green);
+    font-size: 14pt;
+  }
+
+  .mr-2{
+    margin-right: 2em;
+  }
+
+  .fa.fa-user{
+    font: normal normal normal 24px/1 FontAwesome;
+    color: var(--green);
+  }
+
+  .fa.fa-sign-out{
+    font: normal normal normal 22px/1 FontAwesome;
+    color: var(--brown);
+  }
+
+  a.logout{
+    color: var(--brown);
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .logout{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .user-wrapper{
+    margin-left: 1em;
+   }
+}
+
+
+

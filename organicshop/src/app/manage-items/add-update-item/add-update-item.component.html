@@ -1,0 +1,192 @@
+<section class="container">
+
+  <form class="form mt-4" [formGroup]="newItemForm" (submit)="addUpdateItem()">
+
+    <div class="row mt-4">
+      <div class="category-action">
+        <i class="fa fa-cutlery" *ngIf="this.addUpdateItemService.getCatId() === this.manageItemsService.FOOD_CAT"></i>
+        <i class="fa fa-bath" *ngIf="this.addUpdateItemService.getCatId() === this.manageItemsService.HEALTH_CAT"></i>
+        <i class="fa fa-flask" *ngIf="this.addUpdateItemService.getCatId() === this.manageItemsService.SUP_CAT"></i>
+        <i class="fa fa-paint-brush" *ngIf="this.addUpdateItemService.getCatId()=== this.manageItemsService.BEAUTY_CAT"></i>
+        <h2>{{ categoryLabel }} - {{ action }}</h2>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="form-group mb-2">
+        <label for="itemName">Nome do Item</label>
+        <input class="form-control items-form-control mt-2 mb-2" id="itemName" 
+                                    type="text" 
+                                    name="itemName" 
+                                    formControlName="itemName"
+                                    *ngIf="this.addUpdateItemService.getAction() == this.addUpdateItemService.ADD_ITEM"
+                                    >
+        <input class="form-control items-form-control mt-2 mb-2" id="itemName" 
+                                    type="text" 
+                                    name="itemName" 
+                                    formControlName="itemName"
+                                    *ngIf="this.addUpdateItemService.getAction() == this.addUpdateItemService.UPDATE_ITEM"
+                                    >
+
+        <div *ngIf="newItemForm.get('itemName')?.errors?.required 
+                    && newItemForm.get('itemName')?.touched" 
+                    class="invalid-feedback mb-3">
+                    Digite o nome do novo item.
+        </div>
+
+        <!--<div *ngIf="newItemForm.get('itemName')?.errors?.existingItemName && 
+                    this.addUpdateItemService.getAction() == this.addUpdateItemService.ADD_ITEM"
+              class="invalid-feedback mb-3">
+            Item existente!
+        </div>-->
+
+      </div>
+    </div>
+
+    <div class="row mt-4" *ngIf="this.addUpdateItemService.getAction() == this.addUpdateItemService.ADD_ITEM">
+      <div class="col-lg-3">
+        <div class="form-group mb-2">
+          <label for="itemType">Tipo</label>
+          <div class="radio-wrapper mt-2">
+            <div class="form-check">
+              <input class="form-check-input" 
+                     type="radio" 
+                     name="itemType" 
+                     id="item-type-unit" 
+                     formControlName="itemType" 
+                     value="un"
+                     [checked]="'checked'"
+                     >
+              <label class="form-check-label" 
+                     for="item-type-unit">
+                Unitário
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" 
+                     type="radio" 
+                     name="itemType" 
+                     id="item-type-weight" 
+                     formControlName="itemType" 
+                     value="kg">
+              <label class="form-check-label" 
+                     for="item-type-weight">
+                Pesado
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="form-group mb-2">
+          <label for="itemPrice">Preço</label>
+          <div class="input-group mt-2 mb-3">
+            <span class="input-group-text" id="item-price">R$</span>
+            <input type="text" 
+                   name="itemPrice"
+                   formControlName="itemPrice" 
+                   class="form-control items-form-control" 
+                   aria-label="item-price" 
+                   aria-describedby="item-price"
+                   format
+                   #itemPrice
+                   >
+          </div>
+
+          <div class="invalid-feedback mb-3" *ngIf="newItemForm.get('itemPrice')?.errors?.required 
+                      && newItemForm.get('itemPrice')?.touched">
+                      Digite o preço do novo item.
+          </div>
+
+          <div class="invalid-feedback mb-3" *ngIf="newItemForm.errors?.priceZeroValue">
+                      O preço do item não pode ser R$ 00,00.
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="row mt-4" *ngIf="this.addUpdateItemService.getAction() == this.addUpdateItemService.UPDATE_ITEM">
+      <div class="col-lg-3">
+        <div class="form-group mb-2">
+          <label for="itemType">Tipo</label>
+          <div class="radio-wrapper mt-2">
+            <div class="form-check">
+              <input class="form-check-input" 
+                     type="radio" 
+                     name="itemType" 
+                     id="itemTypeUnit" 
+                     formControlName="itemType" 
+                     value="un"
+                     >
+              <label class="form-check-label" 
+                     for="itemTypeUnit">
+                Unitário
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" 
+                     type="radio" 
+                     name="itemType" 
+                     id="itemTypeWeight" 
+                     formControlName="itemType" 
+                     value="kg">
+              <label class="form-check-label" 
+                     for="itemTypeWeight">
+                Pesado
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="form-group mb-2">
+          <label for="itemPrice">Preço</label>
+          <div class="input-group mt-2 mb-3">
+            <span class="input-group-text" id="item-price">R$</span>
+            <input type="text" 
+                   name="itemPrice"
+                   formControlName="itemPrice" 
+                   class="form-control items-form-control" 
+                   aria-label="item-price" 
+                   aria-describedby="item-price"
+                   format
+                   #itemPrice
+                   >
+          </div>
+
+          <div class="invalid-feedback mb-3" *ngIf="newItemForm.errors?.priceZeroValue">
+            O preço do item não pode ser R$ 00,00.
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-lg-6">
+        <!--layout space-->
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6 mt-3" *ngIf="this.addUpdateItemService.getAction() == this.addUpdateItemService.ADD_ITEM">
+            <button class="btn btn-secondary btn-block" type="reset">Limpar</button>
+          </div>
+          <div class="col-lg-6 mt-3" *ngIf="this.addUpdateItemService.getAction() == this.addUpdateItemService.ADD_ITEM">
+            <button class="btn btn-primary btn-block" [disabled]="this.newItemForm.invalid" type="submit">Incluir</button>
+          </div>
+          <div class="col-lg-6 mt-3" *ngIf="this.addUpdateItemService.getAction() == this.addUpdateItemService.UPDATE_ITEM">
+            <!--layout space-->
+          </div>
+          <div class="col-lg-6 mt-3" *ngIf="this.addUpdateItemService.getAction() == this.addUpdateItemService.UPDATE_ITEM">
+            <button class="btn btn-primary btn-block" type="submit" [disabled]="this.newItemForm.invalid">Atualizar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+</section>
+
+

@@ -1,0 +1,179 @@
+<div class="container-fluid">
+  <div class="container text-center">
+
+    <h4 class="text-center mt-4">Registrar novo usuário</h4>
+
+    <form class="form mt-4" [formGroup]="newUserForm" (submit)="registerNewUser()">
+
+      <div class="row">
+        <div class="col-lg-6 mt-3">
+          <div class="form-group">
+            <label for="userName">Usuário</label>
+            <input
+              class="form-control mt-2 text-center"
+              formControlName="userName"
+              id="userName"
+            />
+            <div class="invalid-feedback"
+                 *ngIf="newUserForm.get('userName')?.errors?.required
+                 && newUserForm.get('userName')?.touched">Nome do usuário obrigatório
+            </div>
+            <div class="invalid-feedback"
+            *ngIf="newUserForm.get('userName')?.errors?.existingUser">
+            Usuário já existe
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-3">
+          <div class="form-group">
+            <label for="userEmail">E-mail</label>
+            <input class="form-control mt-2 text-center" id="userEmail" formControlName="userEmail" />
+            <div class="invalid-feedback"
+                *ngIf="newUserForm.get('userEmail')?.errors?.required
+                && newUserForm.get('userEmail')?.touched">E-mail obrigatório
+            </div>
+            <div class="invalid-feedback"
+                *ngIf="newUserForm.get('userEmail')?.errors?.email
+                && newUserForm.get('userEmail')?.touched">E-mail no formato incorreto
+            </div>
+            <div class="invalid-feedback"
+            *ngIf="newUserForm.get('userEmail')?.errors?.existingEmail">
+            E-mail já existe
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 mt-3">
+          <div class="form-group">
+            <label for="userPassword">Senha</label>
+            <input type="password" id="userPassword"
+                   class="form-control mt-2 text-center"
+                   formControlName="userPassword"/>
+                  <div class="invalid-feedback"
+                  *ngIf="newUserForm.get('userPassword')?.errors?.required
+                  && newUserForm.get('userPassword')?.touched">Senha obrigatória
+                  </div>
+                  <div class="invalid-feedback"
+                  *ngIf="newUserForm.errors?.passwordEqualUser">
+                  Senha deve ser diferente do usuário
+                  </div>
+                  <div class="invalid-feedback"
+                  *ngIf="newUserForm.errors?.passwordIsWeak">
+                  Senha deve ter pelo menos 8 caracteres, um número e um caracter especial (Exemplo: VbX9#aweRt!)
+                  </div>
+
+                  
+          </div>
+        </div>
+        <div class="col-lg-6 mt-3">
+          <div class="form-group">
+            <label for="userPasswordConfirm">Confirme a senha</label>
+            <input type="password" id="userPasswordConfirm"
+                   class="form-control mt-2 text-center"
+                   formControlName="userPasswordConfirm"/>
+                  <div class="invalid-feedback"
+                  *ngIf="newUserForm.errors?.passwordEqualConfirmPass">
+                  A confirmação da senha deve ter o mesmo valor do campo senha
+                  </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 mt-3">
+          <div class="form-group">
+            <label for="userFullName">Nome Completo</label>
+            <input type="string" id="userFullName"
+                   class="form-control mt-2 text-center"
+                   formControlName="userFullName"/>
+                  <div class="invalid-feedback"
+                  *ngIf="newUserForm.get('userFullName')?.errors?.required
+                  && newUserForm.get('userFullName')?.touched">Nome completo obrigatório
+                  </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 mt-3">
+          <div class="form-group">
+            <label for="userBirthday">Data de Nascimento</label>
+            <input type="text"  
+                   bsDatepicker
+                   [bsConfig]="{ locale: 'pt-br', dateInputFormat: 'DD/MM/YYYY' }"
+                   class="form-control mt-2 text-center" 
+                   formControlName="userBirthday">
+                   <div class="invalid-feedback"
+                   *ngIf="newUserForm.get('userBirthday')?.errors?.required
+                   && newUserForm.get('userBirthday')?.touched">Data de nascimento obrigatória
+                   </div>
+                   <div class="invalid-feedback"
+                   *ngIf="newUserForm.get('userBirthday')?.errors?.tooYoung">Você precisa ter 18 anos ou mais
+                   </div>
+                   <div class="invalid-feedback"
+                   *ngIf="newUserForm.get('userBirthday')?.errors?.futureDate">Data de nascimento inválida
+                   </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-3">
+          <div class="form-group">
+            <label for="userSegment">Departamento</label>
+            <select id="userSegment" name="userSegment"
+                   class="form-control mt-2 text-center"
+                   formControlName="userSegment">
+                   <option class="list-op" *ngFor="let option of options">{{ option }}</option>
+            </select>
+            <div class="invalid-feedback"
+            *ngIf="newUserForm.get('userSegment')?.errors?.required
+            && newUserForm.get('userSegment')?.touched">Segmento do usuário obrigatório
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 mt-3">
+          <div class="form-group">
+            <label for="userRole">Cargo</label>
+            <input type="string" id="userRole"
+                   class="form-control mt-2 text-center"
+                   formControlName="userRole"/>
+                  <div class="invalid-feedback"
+                  *ngIf="newUserForm.get('userRole')?.errors?.required
+                  && newUserForm.get('userRole')?.touched">Cargo do novo usuário obrigatório
+                  </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <button class="btn btn-secondary btn-block" type="reset">Limpar</button>
+        </div>
+        <div class="col-lg-6">
+          <button class="btn btn-primary btn-block" type="submit" [disabled]="!this.newUserForm.valid">Cadastrar usuário</button>
+        </div>
+      </div>
+
+    </form>
+
+    <div class="row mt-4">
+      <p>Já um usuário? <a [routerLink]="['']"><strong>Faça Login</strong></a></p>
+    </div>
+
+  </div>
+
+  <div *ngIf="this.modalService.openModal">
+    <app-modal [message]="modalMessage" [icon]="modalIcon" [modalType]="modalType" (changedModal)="onModalChangeUserWasAdded($event)"></app-modal>
+  </div>
+
+  <div *ngIf="this.modalService.openModal">
+    <app-modal [message]="modalMessage" [icon]="modalIcon" [modalType]="modalType" (changedModal)="onModalChangeThereWasAnError($event)"></app-modal>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,43 @@
+.card {
+    min-height: auto;
+    max-height: 90%;
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 2rem;
+    z-index: 11;
+
+    .fa {
+      font: normal normal normal 100px/1 FontAwesome;
+    }
+
+    .message {
+       font-size: 20pt;  
+       font-weight: 500;
+    }
+
+    button{
+        width: 100%;
+        font-weight: 500;
+        height: 3rem !important;
+    }
+
+    .ok-button{
+      width: 40%;
+    }
+  }
+
+.overlay {
+    background: #000;
+    height: 100vh;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+}

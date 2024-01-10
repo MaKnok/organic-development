@@ -1,0 +1,82 @@
+
+<section class="container">
+  <div class="row mt-4">
+    <div class="col-lg-3">
+      <form class="form-group" [formGroup]="searchItemForm" (submit)="searchItem()">
+        <div class="input-group mb-2">
+          <input type="text" 
+                class="form-control items-form-control" 
+                id="searchValue" 
+                placeholder="Busca" 
+                name="searchValue" 
+                formControlName="searchValue">
+          <div class="invalid-feedback"
+               *ngIf="itemNotFound">
+                Item não encontrado
+          </div>
+        </div>
+        <div class="invalid-feedback mb-3" *ngIf="searchItemForm.get('searchValue')?.errors?.required && searchItemForm.get('searchValue')?.touched">Digite o valor da busca.</div>
+        <div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa fa-search"></i>
+            <a class="label-button">Buscar item</a>
+          </button>
+        </div>
+      </form>
+
+      <div class="buttons-wrapper mt-5">
+        <div class="edit-item">
+          <button type="button" 
+                class="btn btn-success mt-3" 
+                (click)="addItem(this.categoryId)">
+                <i class="fa fa-plus"></i>
+          </button>
+        </div>
+        <div class="edit-item">
+          <button type="button" 
+                class="btn btn-warning mt-3" 
+                (click)="editItem(this.categoryId, this.selectedItem)">
+                <i class="fa fa-pencil"></i>
+          </button>
+        </div>
+        <div class="edit-item">
+          <button type="button" 
+                class="btn btn-danger mt-3" 
+                (click)="onModalChangeDeleteItem(true)">
+                <i class="fa fa-trash"></i>
+          </button>
+        </div>
+      </div>
+    
+    </div>
+    <div class="col-lg-9">
+      <div class="table-wrapper">
+        <table class="table-style">
+          <thead class="table-style__header">
+            <th class="table-style__header__content">Data</th>
+            <th class="table-style__header__content">Nome do Item</th>
+            <th class="table-style__header__content">Preço</th>
+          </thead>
+          <tbody *ngIf="inventoryItems$; else: emptyList">
+              <tr class="table-style__row-style"  *ngFor="let item of inventoryItems$" (click)="selectItem(item)">
+                <td class="table-style__row-style__content" [ngClass]="{'table-style__row-style__content__selected-content': item?._id === this.selectedItem?._id}">{{ item?.date | date:"short" }}</td>
+                <td class="table-style__row-style__content" [ngClass]="{'table-style__row-style__content__selected-content': item?._id === this.selectedItem?._id}">{{ item?.itemName }}</td>
+                <td class="table-style__row-style__content" [ngClass]="{'table-style__row-style__content__selected-content': item?._id === this.selectedItem?._id}">{{ item?.itemPrice | currency:'BRL':true:'1.2-2' }}</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      <ng-template #emptyList>
+        <p class="no-registered-operation mt-3">Nenhuma operação cadastrada nessa categoria!</p>
+      </ng-template>
+    </div>
+  </div>
+
+  <div *ngIf="this.modalService.openModal">
+    <app-modal [modalType]="modalType" [message]="modalMessage" [icon]="modalIcon" [item]="this.selectedItem" [catId]="this.categoryId" (changedModal)="onModalChangeDeleteItem($event)"></app-modal>
+  </div>
+</section>
+
+
+
+

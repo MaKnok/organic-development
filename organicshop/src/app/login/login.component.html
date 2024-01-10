@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <section class="container text-center">
+    <form class="form mt-4" (ngSubmit)="enterLogin()" #loginForm="ngForm">
+
+        <div class="logo-img">
+          <img src="assets/img/organic-shop.svg" class="img-fluid" alt="organic-shop">
+        </div>
+
+        <h2 class="form-title mt-4">Login</h2>
+
+        <div class="form-group mt-4">
+          <label for="user">Usuário</label>
+          <input class="form-control mt-2 text-center"
+                 id="user"
+                 type="text"
+                 name="user"
+                 [(ngModel)]="user"
+                 #userField="ngModel"
+                 (click)="clearValidationMessage()"
+                 required>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="password">Senha</label>
+          <input class="form-control mt-2 text-center"
+                 id="password"
+                 type="password"
+                 name="password"
+                 [(ngModel)]="password"
+                 #passwordField="ngModel"
+                 (click)="clearValidationMessage()" required>
+        </div>
+
+        <div class="invalid-feedback" *ngIf="validationMessage !== ''">{{validationMessage}}</div>
+
+        <div class="buttons-wrapper mt-4">
+          <button class="btn btn-secondary btn-block" type="reset">Limpar</button>
+          <button class="btn btn-primary btn-block" type="submit" [disabled]="loginForm.invalid">Entrar</button>
+        </div>
+
+    </form>
+    <div class="row mt-5">
+      <h5 class="new-user"><a [routerLink]="['/new-user']">Novo usuário</a></h5>
+    </div>
+  </section>
+</div>
+
+
+

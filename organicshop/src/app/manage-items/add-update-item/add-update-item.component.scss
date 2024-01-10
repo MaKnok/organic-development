@@ -1,0 +1,31 @@
+
+.category-action{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .fa{
+        font: normal normal normal 36px/1 FontAwesome;
+        margin-right: 0.5em;
+      }
+}
+
+.radio-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .ml-3{
+        margin-left: 1em;
+    }
+}
+
+label{
+    color:var(--brown);
+}
+
+button{
+    width: 100%;
+}
+

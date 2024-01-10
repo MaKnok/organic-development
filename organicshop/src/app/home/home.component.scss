@@ -1,0 +1,49 @@
+.col-lg-4{
+  padding: 0 2em;
+  .btn.btn-primary.home-options{
+    width:100%;
+    font-size: 16pt !important;
+    font-weight: 500;
+    line-height: 20pt !important;
+    height:12rem !important;
+    background-color: var(--green);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &:active,
+    &:focus{
+      background-color: var(--active-green) !important;
+    }
+
+    .fa{
+      font: normal normal normal 48px/1 FontAwesome;
+    }
+
+  }
+}
+
+
+@media only screen and (min-width: 990px) {
+  .row{
+    padding-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  .col-lg-4{
+    padding: 0 8em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .col-lg-4{
+    padding: 0 2em;
+    .btn.btn-primary.home-options{
+      height: 9rem !important;
+    }
+  }
+}
+
+

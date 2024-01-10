@@ -1,0 +1,22 @@
+<header class="sticky-top">
+  <nav class="navbar navbar-light" [ngClass]="{'login-top-bar': this.router.url === '/login',
+                                               'logged-in-top-bar': this.router.url !== '/login' &&  this.router.url !== '/new-user'}">
+    <div class="logged-in-wrapper" *ngIf = "user$ as user">
+        <div class="logged-in-navbar" *ngIf="user.length > 0 && this.router.url !== '/login' &&  this.router.url !== '/new-user'; else login">
+          <div>
+            <a class="navbar-brand"><img src="assets/img/organic-shop.svg" class="logo-img" alt="organic-shop"></a>
+          </div>
+          <div class="user-wrapper">
+              <i class="fa fa-user mr-1"></i>
+              <a class="mr-2">{{ user[0].userName }}</a>
+              <i class="fa fa-sign-out mr-05" aria-hidden="true" (click)="logout()"></i>
+              <a class="logout" (click)="logout()">Sair</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+  <ng-template #login>
+    <div class="navbar-text">
+    </div>
+  </ng-template>
+</header>
