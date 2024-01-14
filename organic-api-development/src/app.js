@@ -16,7 +16,7 @@ db.once("open", ()=>{
 const app = express();
 
 const corsOptions = {
-    origin: 'https://www.itsorganic.shop',  
+    origin: 'http://localhost:4200',  
     credentials: true,
   };
 
