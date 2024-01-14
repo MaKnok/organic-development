@@ -14,7 +14,6 @@ export class TokenService {
 
   saveToken(token: string) {
     localStorage.setItem(KEY, token);
-    document.cookie = `${KEY}=${token}; Secure; SameSite=None; path=/; domain=api.itsorganic.shop`;
   }
 
   deleteToken() {

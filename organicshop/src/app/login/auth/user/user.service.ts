@@ -1,4 +1,6 @@
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { TokenService } from './../token.service';
+import { environment } from 'src/environments/environment';
 import { Injectable } from '@angular/core';
 import { AuthUser } from './auth-user';
 import jwt_decode from 'jwt-decode';
@@ -12,11 +14,13 @@ export class UserService {
   private userSubject = new BehaviorSubject<AuthUser>({});
   private userData: any[] = []; 
 
-  constructor(private tokenService: TokenService) {
+  constructor(private tokenService: TokenService, private http: HttpClient) {
     if (this.tokenService.hasToken()) {
       this.decodeJWT();
     }
   }
+
+  private API: string = environment.apiURL;
 
   private decodeJWT() {
     const token = this.tokenService.returnsToken();
@@ -41,10 +45,11 @@ export class UserService {
     return this.userData; 
   }
 
-  logout() {
+  logout(token: string) {
     this.tokenService.deleteToken();
     this.userSubject.next({});
     this.userData = [];
+    return this.http.post(`${this.API}/users/logout`, { token });
   }
 
   isLoggedIn() {
