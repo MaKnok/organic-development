@@ -29,8 +29,8 @@ export class TopBarComponent {
       document.cookie = 'jwt=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
   
       // Navigate to the desired route
+      this.router.navigate(['/']);
       location.reload();
-      this.router.navigate(['']);
 
     } catch (error) {
       console.error(error);

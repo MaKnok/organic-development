@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ManageItemsService } from './manage-items.service';
+import { HttpClientModule } from '@angular/common/http';
 import { ManageItemsComponent } from './manage-items.component';
 
 describe('ManageItemsComponent', () => {
@@ -8,7 +9,9 @@ describe('ManageItemsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ManageItemsComponent ]
+      declarations: [ ManageItemsComponent ],
+      providers: [ ManageItemsService ], // Add your service if applicable
+      imports: [ HttpClientModule ],
     })
     .compileComponents();
 

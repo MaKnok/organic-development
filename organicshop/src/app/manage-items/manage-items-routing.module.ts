@@ -3,6 +3,7 @@ import { ManageItemsComponent } from './manage-items.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ManageItemComponent } from './manage-item/manage-item.component';
+import { AuthGuard } from '../login/auth/auth.guard';
 
 const routes: Routes = [{
   path: '',
@@ -10,11 +11,13 @@ const routes: Routes = [{
   children:[
     {
       path: 'manage-item',
-      component: ManageItemComponent
+      component: ManageItemComponent,
+      canActivate: [AuthGuard],
     },
     {
       path: 'add-update-item',
-      component: AddUpdateItemComponent
+      component: AddUpdateItemComponent,
+      canActivate: [AuthGuard],
     },
   ],
 }];

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientModule } from '@angular/common/http';
 import { ModalComponent } from './modal.component';
+import { AddUpdateItemService } from 'src/app/manage-items/add-update-item/add-update-item.service'
 
 describe('ModalComponent', () => {
   let component: ModalComponent;
@@ -8,7 +9,11 @@ describe('ModalComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ModalComponent ]
+      imports: [ HttpClientModule ],
+      declarations: [ ModalComponent ],
+      providers:[
+        AddUpdateItemService,
+      ]
     })
     .compileComponents();
 

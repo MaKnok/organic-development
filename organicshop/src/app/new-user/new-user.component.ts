@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 import { confirmPasswordValidator } from './confirm-password.validator';
 import { User } from '../models/user.model';
 import { NewUserService } from './new-user.service';
@@ -22,7 +21,6 @@ export class NewUserComponent implements OnInit {
     private formBuilder: FormBuilder,
     private newUserService: NewUserService,
     private userExistsService: UserExistsService,
-    private router: Router,
     public modalService: ModalService,
   ) {}
 
@@ -97,6 +95,8 @@ export class NewUserComponent implements OnInit {
         },
         complete: () => console.info('Register completed!'),
       });
+    }else{
+      return false;
     }
   }
 

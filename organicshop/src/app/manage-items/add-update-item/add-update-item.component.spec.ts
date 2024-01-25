@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { AddUpdateItemService } from 'src/app/manage-items/add-update-item/add-update-item.service';
 import { AddUpdateItemComponent } from './add-update-item.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('AddUpdateItemComponent', () => {
   let component: AddUpdateItemComponent;
@@ -8,7 +9,9 @@ describe('AddUpdateItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddUpdateItemComponent ]
+      declarations: [ AddUpdateItemComponent ],
+      providers: [ AddUpdateItemService ], 
+      imports: [ HttpClientModule ],
     })
     .compileComponents();
 
