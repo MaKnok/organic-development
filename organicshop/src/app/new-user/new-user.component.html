@@ -123,7 +123,8 @@
             <select id="userSegment" name="userSegment"
                    class="form-control mt-2 text-center"
                    formControlName="userSegment">
-                   <option class="list-op" *ngFor="let option of options">{{ option }}</option>
+                   <option class="list-op" disabled selected hidden>{{ options[0] }}</option>
+                   <option class="list-op" *ngFor="let option of options.slice(1)">{{ option }}</option>
             </select>
             <div class="invalid-feedback"
             *ngIf="newUserForm.get('userSegment')?.errors?.required

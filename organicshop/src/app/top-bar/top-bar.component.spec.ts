@@ -12,7 +12,7 @@ describe('TopBarComponent', () => {
       declarations: [ TopBarComponent ],
       imports: [ HttpClientModule ],
       providers: [
-        UserService,  // Add your service if applicable
+        UserService // Add your service if applicable
         // Other providers
       ],
     })

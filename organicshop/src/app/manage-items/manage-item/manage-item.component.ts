@@ -42,7 +42,7 @@ export class ManageItemComponent implements OnInit {
     this.provideList();
     this.searchItemForm = this.formBuilder.group({
       searchValue:['',
-                   [Validators.required],
+                  [Validators.required],
                   ],
     })
   }

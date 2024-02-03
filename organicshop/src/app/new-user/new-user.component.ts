@@ -35,7 +35,7 @@ export class NewUserComponent implements OnInit {
   ERROR_ICON: string = 'fa fa-exclamation-triangle';
 
   options: string[] = [
-    'Help Desk', 'TI', 'Vendas', 'Administração', 'Atendimento'
+    'Selecione o departamento', 'Help Desk', 'TI', 'Vendas', 'Administração', 'Atendimento'
   ]
 
   ngOnInit(): void {
@@ -82,7 +82,6 @@ export class NewUserComponent implements OnInit {
         userSegment: usersegment,
         userRole: userrole, 
       } as User;
-      console.log(newUser);
 
       this.newUserService.registerNewUser(newUser).subscribe({
         next: (response) => {
@@ -95,8 +94,6 @@ export class NewUserComponent implements OnInit {
         },
         complete: () => console.info('Register completed!'),
       });
-    }else{
-      return false;
     }
   }
 

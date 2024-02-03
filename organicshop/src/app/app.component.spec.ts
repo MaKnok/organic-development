@@ -1,5 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { TopBarModule } from './top-bar/top-bar.module';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { FooterModule } from './footer/footer.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -7,6 +11,10 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [ HttpClientModule, 
+                 TopBarModule,
+                 AppRoutingModule,
+                 FooterModule],
     }).compileComponents();
   });
 
@@ -22,10 +30,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('organic-shop');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('organic-shop app is running!');
-  });
 });
