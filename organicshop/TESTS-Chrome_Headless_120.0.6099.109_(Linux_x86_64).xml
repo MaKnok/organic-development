@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 120.0.6099.109 (Linux x86_64)" package="" timestamp="2024-02-13T06:01:27" id="0" hostname="marina-Inspiron-15-3511" tests="49" errors="0" failures="0" time="0.473">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.6099.109 Safari/537.36"/>
+  </properties>
+  <testcase name="LoginGuard should be created" time="0.071" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).LoginGuard"/>
+  <testcase name="LoginComponent should create" time="0.046" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).LoginComponent"/>
+  <testcase name="UserService should be created" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).UserService"/>
+  <testcase name="ManageItemsComponent should create" time="0.018" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).ManageItemsComponent"/>
+  <testcase name="ManageItemsService should be created" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).ManageItemsService"/>
+  <testcase name="HomeComponent should create" time="0.008" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).HomeComponent"/>
+  <testcase name="NewUserComponent should disable submit button when form is invalid" time="0.042" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password is different from username" time="0.014" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if role field is filled" time="0.015" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password field is filled" time="0.013" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if email is valid" time="0.012" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if email field is filled" time="0.013" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should create" time="0.008" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should call onModalChangeThereWasAnError when error comes from the server" time="0.012" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if user is not under 18" time="0.013" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should navigate to home page when the router link is clicked" time="0.013" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if user name is filled" time="0.01" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password and password confirmation match" time="0.009" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if date is not future date" time="0.01" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if birthday field is filled" time="0.007" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should clear the form when the clear button is clicked" time="0.01" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if fullname field is filled" time="0.009" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent registerNewUser should register a new user" time="0.009" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password is safe enough" time="0.01" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if segment field is filled" time="0.011" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserComponent"/>
+  <testcase name="UserExistsService emailExists should return null if email does not exist" time="0.003" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).UserExistsService emailExists"/>
+  <testcase name="UserExistsService emailExists should return error if email exists" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).UserExistsService emailExists"/>
+  <testcase name="UserExistsService should be created" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).UserExistsService"/>
+  <testcase name="UserExistsService userExists should return null if user does not exist" time="0.003" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).UserExistsService userExists"/>
+  <testcase name="UserExistsService userExists should return error if user exists" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).UserExistsService userExists"/>
+  <testcase name="FooterComponent should create" time="0.004" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).FooterComponent"/>
+  <testcase name="AuthService should be created" time="0.001" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).AuthService"/>
+  <testcase name="BrlPipe create an instance" time="0.001" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).BrlPipe"/>
+  <testcase name="NewUserService should be created" time="0.003" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).NewUserService"/>
+  <testcase name="AuthGuard should be created" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).AuthGuard"/>
+  <testcase name="AppComponent should have as title 'organic-shop'" time="0.006" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.004" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).AppComponent"/>
+  <testcase name="ModalComponent should create" time="0.006" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).ModalComponent"/>
+  <testcase name="ManageItemComponent should create" time="0.014" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).ManageItemComponent"/>
+  <testcase name="ManageItemService should be created" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).ManageItemService"/>
+  <testcase name="ItemExistsService should be created" time="0.003" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).ItemExistsService"/>
+  <testcase name="AddUpdateItemService should be created" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).AddUpdateItemService"/>
+  <testcase name="UserListingComponent should create" time="0.003" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).UserListingComponent"/>
+  <testcase name="TokenService should be created" time="0.001" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).TokenService"/>
+  <testcase name="SalesComponent should create" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).SalesComponent"/>
+  <testcase name="TopBarComponent should create" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).TopBarComponent"/>
+  <testcase name="AddUpdateItemComponent should create" time="0.014" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).AddUpdateItemComponent"/>
+  <testcase name="LoginService should be created" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).LoginService"/>
+  <testcase name="ModalService should be created" time="0.002" classname="Chrome_Headless_120_0_6099_109_(Linux_x86_64).ModalService"/>
+  <system-out>
+    <![CDATA[Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'user data >>', []
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage items unsubscribed'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: Object{status: 500, message: 'Internal Server Error'}
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: null
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'API Response:', Object{userName: 'Test User Name', userEmail: 'testemail@test.com', userPassword: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA==', userFullName: 'User Test Name', userBirthday: Sun Dec 31 1989 21:00:00 GMT-0300 (Falkland Islands Summer Time), userSegment: 'TI', userRole: 'Desenvolvedor Fullstack'}
+,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Register completed!'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) WARN: 'Spec 'UserExistsService emailExists should return null if email does not exist' has no expectations.'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) WARN: 'Spec 'UserExistsService emailExists should return error if email exists' has no expectations.'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) WARN: 'Spec 'UserExistsService userExists should return null if user does not exist' has no expectations.'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) WARN: 'Spec 'UserExistsService userExists should return error if user exists' has no expectations.'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

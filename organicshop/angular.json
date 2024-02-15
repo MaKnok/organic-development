@@ -97,7 +97,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jasmine-core/lib/jasmine-core/jasmine.js"
+            ],
+            "karmaConfig": "karma.conf.js"
           }
         }
       }
