@@ -3,7 +3,8 @@ import { LoginService } from '../login/login.service';
 import { UserService } from '../login/auth/user/user.service';
 import { Router } from '@angular/router';
 import { TokenService } from '../login/auth/token.service';
-import { lastValueFrom } from 'rxjs';
+import { from, lastValueFrom, startWith } from 'rxjs';
+import { PageReloadService } from '../login/auth/logout.service';
 
 @Component({
   selector: 'app-top-bar',
@@ -13,7 +14,9 @@ import { lastValueFrom } from 'rxjs';
 export class TopBarComponent {
   constructor(private userService: UserService, 
               public router: Router, 
-              private tokenService: TokenService) {}
+              private tokenService: TokenService,
+              private pageReloadService: PageReloadService
+              ) {}
 
   user$ = this.userService.returnUserData();
 
@@ -30,7 +33,7 @@ export class TopBarComponent {
   
       // Navigate to the desired route
       this.router.navigate(['/']);
-      location.reload();
+      this.pageReloadService.reloadPage();
 
     } catch (error) {
       console.error(error);

@@ -66,9 +66,12 @@ export class LoginComponent implements OnInit {
         },
         complete: () => {
           console.info('Login completed!');
+
+          if (this.subscription) {
+            this.subscription.unsubscribe();
+            console.log('unsubscribe done!');
+          }
           
-          this.subscription.unsubscribe();
-          console.log('unsubscribe done!');
         },
       });
   }

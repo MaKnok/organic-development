@@ -4,7 +4,7 @@ import { environment } from 'src/environments/environment';
 import { Injectable } from '@angular/core';
 import { AuthUser } from './auth-user';
 import jwt_decode from 'jwt-decode';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -13,10 +13,13 @@ export class UserService {
   //observable which stores the last state
   private userSubject = new BehaviorSubject<AuthUser>({});
   private userData: any[] = []; 
+  userData$: Observable<any[]> = of([]); 
 
   constructor(private tokenService: TokenService, private http: HttpClient) {
     if (this.tokenService.hasToken()) {
       this.decodeJWT();
+    } else {
+      this.userData$ = of(this.userData);
     }
   }
 
@@ -39,16 +42,18 @@ export class UserService {
 
   saveUserData(userData: any) {
     this.userData.push(userData);
+    this.userData$ = of(this.userData); // Update userData$ as an observable with the updated array
   }
 
-  returnUserData():any {
-    return this.userData; 
+  returnUserData(): Observable<any[]> {
+    return this.userData$; // Return userData$ as an observable
   }
 
   logout(token: string) {
     this.tokenService.deleteToken();
     this.userSubject.next({});
     this.userData = [];
+    this.userData$ = of(this.userData); 
     return this.http.post(`${this.API}/users/logout`, { token });
   }
 

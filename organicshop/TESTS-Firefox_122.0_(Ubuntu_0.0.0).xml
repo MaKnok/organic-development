@@ -1,125 +1,131 @@
 <?xml version="1.0"?>
-<testsuite name="Firefox 122.0 (Ubuntu 0.0.0)" package="" timestamp="2024-02-13T05:19:25" id="0" hostname="marina-Inspiron-15-3511" tests="49" errors="0" failures="0" time="0.7">
+<testsuite name="Firefox 122.0 (Ubuntu 0.0.0)" package="" timestamp="2024-02-27T11:05:12" id="0" hostname="marina-Inspiron-15-3511" tests="63" errors="0" failures="1" time="0.641">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"/>
   </properties>
-  <testcase name="UserExistsService emailExists should return null if email does not exist" time="0.05" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService emailExists"/>
-  <testcase name="UserExistsService emailExists should return error if email exists" time="0.007" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService emailExists"/>
-  <testcase name="UserExistsService should be created" time="0.008" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService"/>
-  <testcase name="UserExistsService userExists should return null if user does not exist" time="0.009" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService userExists"/>
-  <testcase name="UserExistsService userExists should return error if user exists" time="0.008" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService userExists"/>
-  <testcase name="LoginService should be created" time="0.014" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginService"/>
-  <testcase name="NewUserService should be created" time="0.005" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserService"/>
-  <testcase name="NewUserComponent should call onModalChangeThereWasAnError when error comes from the server" time="0.094" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if birthday field is filled" time="0.031" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if user is not under 18" time="0.024" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if password and password confirmation match" time="0.02" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if fullname field is filled" time="0.018" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if password is different from username" time="0.019" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should disable submit button when form is invalid" time="0.021" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should create" time="0.02" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if email is valid" time="0.019" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if password field is filled" time="0.019" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if password is safe enough" time="0.017" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should clear the form when the clear button is clicked" time="0.016" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if user name is filled" time="0.016" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if role field is filled" time="0.014" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if email field is filled" time="0.014" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if segment field is filled" time="0.013" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if date is not future date" time="0.02" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should navigate to home page when the router link is clicked" time="0.015" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent registerNewUser should register a new user" time="0.013" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="AddUpdateItemComponent should create" time="0.027" classname="Firefox_122_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
-  <testcase name="TopBarComponent should create" time="0.007" classname="Firefox_122_0_(Ubuntu_0_0_0).TopBarComponent"/>
-  <testcase name="UserService should be created" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).UserService"/>
-  <testcase name="AddUpdateItemService should be created" time="0.004" classname="Firefox_122_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
-  <testcase name="ManageItemsService should be created" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).ManageItemsService"/>
-  <testcase name="ManageItemService should be created" time="0.006" classname="Firefox_122_0_(Ubuntu_0_0_0).ManageItemService"/>
-  <testcase name="ModalComponent should create" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).ModalComponent"/>
-  <testcase name="ManageItemComponent should create" time="0.02" classname="Firefox_122_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="AppComponent should create the app" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).AppComponent"/>
-  <testcase name="AppComponent should have as title 'organic-shop'" time="0.007" classname="Firefox_122_0_(Ubuntu_0_0_0).AppComponent"/>
-  <testcase name="ModalService should be created" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).ModalService"/>
-  <testcase name="ItemExistsService should be created" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).ItemExistsService"/>
-  <testcase name="UserListingComponent should create" time="0.005" classname="Firefox_122_0_(Ubuntu_0_0_0).UserListingComponent"/>
-  <testcase name="HomeComponent should create" time="0.006" classname="Firefox_122_0_(Ubuntu_0_0_0).HomeComponent"/>
-  <testcase name="FooterComponent should create" time="0.008" classname="Firefox_122_0_(Ubuntu_0_0_0).FooterComponent"/>
+  <testcase name="LoginGuard should be created" time="0.046" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginGuard"/>
+  <testcase name="Confirm password validator should return validation error when passwords do not match" time="0.064" classname="Firefox_122_0_(Ubuntu_0_0_0).Confirm password validator"/>
+  <testcase name="Confirm password validator should return null when passwords match" time="0.013" classname="Firefox_122_0_(Ubuntu_0_0_0).Confirm password validator"/>
+  <testcase name="AddUpdateItemComponent should create" time="0.024" classname="Firefox_122_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="Age validator should validate age" time="0.011" classname="Firefox_122_0_(Ubuntu_0_0_0).Age validator"/>
   <testcase name="AuthService should be created" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).AuthService"/>
-  <testcase name="BrlPipe create an instance" time="0" classname="Firefox_122_0_(Ubuntu_0_0_0).BrlPipe"/>
-  <testcase name="ManageItemsComponent should create" time="0.013" classname="Firefox_122_0_(Ubuntu_0_0_0).ManageItemsComponent"/>
-  <testcase name="AuthGuard should be created" time="0.004" classname="Firefox_122_0_(Ubuntu_0_0_0).AuthGuard"/>
-  <testcase name="SalesComponent should create" time="0.007" classname="Firefox_122_0_(Ubuntu_0_0_0).SalesComponent"/>
-  <testcase name="TokenService should be created" time="0.004" classname="Firefox_122_0_(Ubuntu_0_0_0).TokenService"/>
-  <testcase name="LoginGuard should be created" time="0.004" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginGuard"/>
-  <testcase name="LoginComponent should create" time="0.017" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="TopBarComponent should create" time="0.008" classname="Firefox_122_0_(Ubuntu_0_0_0).TopBarComponent"/>
+  <testcase name="TopBarComponent should display username when user is logged in" time="0.016" classname="Firefox_122_0_(Ubuntu_0_0_0).TopBarComponent">
+    <failure type="">Failed: Username element with class .mr-2 not found
+&lt;Jasmine&gt;
+8283/&lt;/&lt;@main.js:3663:11
+asyncGeneratorStep@vendor.js:110016:24
+_next@vendor.js:110035:27
+invoke@polyfills.js:355:158
+onInvoke@vendor.js:4870:35
+onInvoke@vendor.js:3953:33
+invoke@polyfills.js:355:46
+run@polyfills.js:138:35
+4924/&lt;/scheduleResolveOrReject/&lt;@polyfills.js:1231:28
+invokeTask@polyfills.js:382:171
+onInvokeTask@vendor.js:4851:23
+onInvokeTask@vendor.js:3981:33
+invokeTask@polyfills.js:382:54
+runTask@polyfills.js:184:37
+drainMicroTaskQueue@polyfills.js:553:23
+</failure>
+  </testcase>
+  <testcase name="ManageItemsComponent should create" time="0.014" classname="Firefox_122_0_(Ubuntu_0_0_0).ManageItemsComponent"/>
+  <testcase name="LoginService should be created" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginService"/>
+  <testcase name="UserService should be created" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).UserService"/>
+  <testcase name="ItemExistsService should be created" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).ItemExistsService"/>
+  <testcase name="TokenService should be created" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).TokenService"/>
+  <testcase name="ModalService should be created" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).ModalService"/>
+  <testcase name="LoginComponent should keep form enter button disabled when form is not valid" time="0.02" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should clear inputs when reset button is clicked" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should navigate to home page when the router link is clicked" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should create" time="0.009" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent enterLogin should handle successful login" time="0.01" classname="Firefox_122_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="AppComponent should create the app" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).AppComponent"/>
+  <testcase name="AppComponent should have as title 'organic-shop'" time="0.006" classname="Firefox_122_0_(Ubuntu_0_0_0).AppComponent"/>
+  <testcase name="NewUserService should be created" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserService"/>
+  <testcase name="HomeComponent should create" time="0.006" classname="Firefox_122_0_(Ubuntu_0_0_0).HomeComponent"/>
+  <testcase name="NewUserComponent should validate if password and password confirmation match" time="0.019" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if fullname field is filled" time="0.018" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if birthday field is filled" time="0.019" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if user is not under 18" time="0.014" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should navigate to home page when the router link is clicked" time="0.013" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if date is not future date" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should call onModalChangeThereWasAnError when error comes from the server" time="0.01" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should disable submit button when form is invalid" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if segment field is filled" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if role field is filled" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should create" time="0.011" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if email field is filled" time="0.014" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent registerNewUser should register a new user" time="0.011" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if user name is filled" time="0.01" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should clear the form when the clear button is clicked" time="0.012" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if email is valid" time="0.011" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password is different from username" time="0.01" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password field is filled" time="0.011" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password is safe enough" time="0.01" classname="Firefox_122_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="FooterComponent should create" time="0.004" classname="Firefox_122_0_(Ubuntu_0_0_0).FooterComponent"/>
+  <testcase name="Password strength validator should return null when password is different from username" time="0.007" classname="Firefox_122_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="Password strength validator should return validation error when password matches username" time="0.007" classname="Firefox_122_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="ModalComponent should create" time="0.009" classname="Firefox_122_0_(Ubuntu_0_0_0).ModalComponent"/>
+  <testcase name="AuthGuard should be created" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).AuthGuard"/>
+  <testcase name="AuthGuard should allow navigation to &quot;home&quot; when canActivate returns true" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).AuthGuard"/>
+  <testcase name="BrlPipe create an instance" time="0.001" classname="Firefox_122_0_(Ubuntu_0_0_0).BrlPipe"/>
+  <testcase name="AddUpdateItemService should be created" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
+  <testcase name="Password strength validator should return null when password length is 8 or more and pass the password regex criteria" time="0.007" classname="Firefox_122_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="Password strength validator should return validation error when password does not pass the password regex criteria" time="0.007" classname="Firefox_122_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="Password strength validator should return validation error when password length is under 8" time="0.007" classname="Firefox_122_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="ManageItemsService should be created" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).ManageItemsService"/>
+  <testcase name="SalesComponent should create" time="0.008" classname="Firefox_122_0_(Ubuntu_0_0_0).SalesComponent"/>
+  <testcase name="ManageItemService should be created" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).ManageItemService"/>
+  <testcase name="UserExistsService userExists should return null if user does not exist" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService userExists"/>
+  <testcase name="UserExistsService userExists should return error if user exists" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService userExists"/>
+  <testcase name="UserExistsService should be created" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService"/>
+  <testcase name="UserExistsService emailExists should return null if email does not exist" time="0.002" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService emailExists"/>
+  <testcase name="UserExistsService emailExists should return error if email exists" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).UserExistsService emailExists"/>
+  <testcase name="ManageItemComponent should create" time="0.016" classname="Firefox_122_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="UserListingComponent should create" time="0.003" classname="Firefox_122_0_(Ubuntu_0_0_0).UserListingComponent"/>
   <system-out>
-    <![CDATA[Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'user data >>', []
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage items unsubscribed'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: Object{status: 500, message: 'Internal Server Error'}
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'API Response:', Object{userName: 'Test User Name', userEmail: 'testemail@test.com', userPassword: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA==', userFullName: 'User Test Name', userBirthday: Sun Dec 31 1989 21:00:00 GMT-0300 (Falkland Islands Summer Time), userSegment: 'TI', userRole: 'Desenvolvedor Fullstack'}
-,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Register completed!'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: null
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+    <![CDATA[Chrome Headless 120.0.6099.109 (Linux x86_64) ERROR
+  Disconnected Client disconnected from CONNECTED state (transport close)
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'Mock user:', [Object{userName: 'testuser'}]
+,Firefox 122.0 (Ubuntu 0.0.0) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'Current URL', '/home'
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'template', <div id="root5" _nghost-a-c50="" ng-version="15.2.1"><header _ngcontent-a-c50="" class="sticky-top"><nav _ngcontent-a-c50="" class="navbar navbar-light logged-in-top-bar" ng-reflect-ng-class="[object Object]"><div _ngcontent-a-c50="" class="logged-in-wrapper"><div _ngcontent-a-c50="" class="navbar-text"></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}--></nav><!--container--></header></div>
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'Manage items unsubscribed'
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: Object{user: 'Test User Name', password: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA=='}
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'Test User Name', '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA=='
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: Object{token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c', data: Object{user: 'Test User Name', password: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA=='}}
+,Firefox 122.0 (Ubuntu 0.0.0) INFO: 'Login completed!'
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
@@ -142,16 +148,8 @@
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'API Response:', Object{userName: 'Test User Name', userEmail: 'testemail@test.com', userPassword: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA==', userFullName: 'User Test Name', userBirthday: Sun Dec 31 1989 21:00:00 GMT-0300 (Falkland Islands Summer Time), userSegment: 'TI', userRole: 'Desenvolvedor Fullstack'}
+,Firefox 122.0 (Ubuntu 0.0.0) INFO: 'Register completed!'
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
@@ -171,22 +169,13 @@
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'API Response:', Object{userName: 'Test User Name', userEmail: 'testemail@test.com', userPassword: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA==', userFullName: 'User Test Name', userBirthday: Sun Dec 31 1989 21:00:00 GMT-0300 (Falkland Islands Summer Time), userSegment: 'TI', userRole: 'Desenvolvedor Fullstack'}
-,Firefox 122.0 (Ubuntu 0.0.0) INFO: 'Register completed!'
+,Firefox 122.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService userExists should return null if user does not exist' has no expectations.'
+,Firefox 122.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService userExists should return error if user exists' has no expectations.'
+,Firefox 122.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService emailExists should return null if email does not exist' has no expectations.'
+,Firefox 122.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService emailExists should return error if email exists' has no expectations.'
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
 ,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'Manage items unsubscribed'
-,Firefox 122.0 (Ubuntu 0.0.0) LOG: 'user data >>', []
 
 ]]>
   </system-out>

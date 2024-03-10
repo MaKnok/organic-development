@@ -13,7 +13,7 @@ export class LoginService {
     private authService: AuthService
   ) {}
 
-  authenticate(user: string, password: string): Observable<User[]> {
+  authenticate(user: string, password: string): Observable<any> {
 
     let userData = {
       "userName": user,
