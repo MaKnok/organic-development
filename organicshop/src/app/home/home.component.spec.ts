@@ -7,6 +7,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { mockAuthGuardFactory } from '../login/mock-auth.guard';
 import { RouterTestingModule } from '@angular/router/testing';
 import { By } from '@angular/platform-browser';
+import { SalesComponent } from '../sales/sales.component';
+import { ManageItemsComponent } from '../manage-items/manage-items.component';
 
 // Define stub components directly within the test file
 @Component({
@@ -28,8 +30,8 @@ describe('HomeComponent', () => {
                     ],
       providers:[{ provide: 'CanActivate', useFactory: mockAuthGuardFactory}],
       imports:[HomeRoutingModule,
-               RouterTestingModule.withRoutes([{ path: 'sales', component: HomeComponent, canActivate: ['CanActivate'] },
-                                               { path: 'manage-items', component: HomeComponent, canActivate: ['CanActivate'] }])]
+               RouterTestingModule.withRoutes([{ path: 'sales', component: SalesComponent, canActivate: ['CanActivate'] },
+                                               { path: 'manage-items', component: ManageItemsComponent, canActivate: ['CanActivate'] }])]
     })
     .compileComponents();
 

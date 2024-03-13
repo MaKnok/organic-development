@@ -77,6 +77,10 @@ export class ManageItemComponent implements OnInit {
       });
   }
 
+  public triggerProvideList(){
+    this.provideList();
+  }
+
   public searchItem(){
     if(this.searchItemForm.valid){
       let searchedItem = this.searchItemForm.getRawValue();
