@@ -282,7 +282,6 @@ describe(NewUserComponent.name, () => {
 
   /** End form items */
 
-
   it('should clear the form when the clear button is clicked', () => {
 
     const birthday = new Date('1990-01-01');
@@ -406,7 +405,6 @@ describe(NewUserComponent.name, () => {
     expect(component.onModalChangeThereWasAnError).toHaveBeenCalledWith(true);
   });
 
-
   it('should navigate to home page when the router link is clicked', () => {
     const navigateSpy = spyOn(router, 'navigateByUrl').and.stub();
   
@@ -423,6 +421,5 @@ describe(NewUserComponent.name, () => {
       fail('Login link not found');
     }
   });
-
 
 });
