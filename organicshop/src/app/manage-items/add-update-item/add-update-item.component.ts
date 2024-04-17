@@ -106,7 +106,7 @@ export class AddUpdateItemComponent implements OnInit{
     
   }
 
-  private hydratePriceItem(){
+  hydratePriceItem(){
     let newItem = this.newItemForm.getRawValue() as InventoryItem;
     newItem['itemPrice'] = parseFloat(this.itemPrice.nativeElement.value.replace(',', '.'));
     console.log('New item >>', newItem);
@@ -124,7 +124,9 @@ export class AddUpdateItemComponent implements OnInit{
           error: (error) => {
             console.log(error);
           },
-          complete: () => console.info('Register completed!'),
+          complete: () => {
+            console.info('Item added successfully!');
+          },
           })
       }else if (this.addUpdateItemService.getAction() == this.addUpdateItemService.UPDATE_ITEM){
         const hydratedItem = this.hydratePriceItem();
@@ -136,10 +138,12 @@ export class AddUpdateItemComponent implements OnInit{
           error: (error) => {
             console.log(error);
           },
-          complete: () => console.info('Update completed!'),
-          }
-        )
-      }
+          complete: () => {
+            console.info('Update completed!');
+          },
+        }
+      )
+    }
     }else{
       alert('Invalid form')
     }

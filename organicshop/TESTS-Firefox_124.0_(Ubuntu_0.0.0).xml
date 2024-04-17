@@ -1,110 +1,626 @@
 <?xml version="1.0"?>
-<testsuite name="Firefox 124.0 (Ubuntu 0.0.0)" package="" timestamp="2024-03-31T22:12:58" id="0" hostname="marina-Inspiron-15-3511" tests="100" errors="0" failures="0" time="1.169">
+<testsuite name="Firefox 124.0 (Ubuntu 0.0.0)" package="" timestamp="2024-04-17T04:33:38" id="0" hostname="marina-Inspiron-15-3511" tests="111" errors="0" failures="0" time="1.087">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0"/>
   </properties>
-  <testcase name="AddUpdateItemComponent should create" time="0.082" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
-  <testcase name="Confirm password validator should return null when passwords match" time="0.039" classname="Firefox_124_0_(Ubuntu_0_0_0).Confirm password validator"/>
-  <testcase name="Confirm password validator should return validation error when passwords do not match" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).Confirm password validator"/>
-  <testcase name="NewUserComponent should validate if fullname field is filled" time="0.021" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent registerNewUser should register a new user" time="0.019" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if role field is filled" time="0.025" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should call onModalChangeThereWasAnError when error comes from the server" time="0.018" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should clear the form when the clear button is clicked" time="0.022" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if birthday field is filled" time="0.022" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if email is valid" time="0.022" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if user is not under 18" time="0.018" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if password and password confirmation match" time="0.02" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should navigate to home page when the router link is clicked" time="0.014" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if password is different from username" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if email field is filled" time="0.015" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if password is safe enough" time="0.016" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if password field is filled" time="0.018" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if user name is filled" time="0.017" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if date is not future date" time="0.014" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should validate if segment field is filled" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should create" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="NewUserComponent should disable submit button when form is invalid" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
-  <testcase name="LoginService should be created" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginService"/>
-  <testcase name="AuthGuard should allow navigation to &quot;home&quot; when canActivate returns true" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).AuthGuard"/>
+  <testcase name="ManageItemComponent searchItem should handle error during subscription" time="0.095" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent selectItem should select item and store in the injectable variable" time="0.015" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent triggerProvideList should handle error during subscription" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent searchItem should bring items according to search results" time="0.036" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent should create" time="0.014" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent addItem should navigate to add update page with chosen category and action" time="0.014" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent triggerProvideList should set inventoryItems$ and selectedItem on successful subscription" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent editItem should navigate to edit update page with chosen category and action" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent deleteItem should send item to delete function in the service" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent deleteItem should handle error in case of something has gone wrong" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="ManageItemComponent onModalChangeDeleteItem should display Delete Item Icon and Message When Modal event is dispatched" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
+  <testcase name="AddUpdateItemComponent should set action to ADD_ITEM_TITLE when action is ADD_ITEM" time="0.026" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent should set action to UPDATE_ITEM_TITLE when action is UPDATE_ITEM" time="0.009" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent addUpdateItem should update item when newItemForm is valid and action is UPDATE_ITEM" time="0.007" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent should define form for ADD_ITEM action" time="0.007" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent should define form for UPDATE_ITEM action" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent should hydrate item price correctly" time="0.008" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent addUpdateItem should add item when newItemForm is valid and action is ADD_ITEM" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent should set itemType to &quot;un&quot; in newItemForm when selectedItem itemType is &quot;un&quot;" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent should set itemType to &quot;kg&quot; in newItemForm when selectedItem itemType is &quot;kg&quot;" time="0.008" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent addUpdateItem should dispatch an alert when the form is not valid" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="AddUpdateItemComponent should create" time="0.022" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemComponent"/>
+  <testcase name="ManageItemService should be created" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemService"/>
+  <testcase name="BrlPipe transform should format the value correctly" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).BrlPipe"/>
+  <testcase name="BrlPipe create an instance" time="0" classname="Firefox_124_0_(Ubuntu_0_0_0).BrlPipe"/>
+  <testcase name="BrlPipe transform should handle negative values correctly" time="0" classname="Firefox_124_0_(Ubuntu_0_0_0).BrlPipe"/>
+  <testcase name="AddUpdateItemService getAction should return action" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
+  <testcase name="AddUpdateItemService getCatLabel should return category label" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
+  <testcase name="AddUpdateItemService getCatId should return inventory items array" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
+  <testcase name="AddUpdateItemService getCatId should return category ID" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
+  <testcase name="AddUpdateItemService getSelectedItem should return selected item" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
+  <testcase name="AddUpdateItemService should be created" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
+  <testcase name="AddUpdateItemService allItems should return items for a given category ID" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
+  <testcase name="AuthGuard should allow navigation to &quot;home&quot; when canActivate returns true" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).AuthGuard"/>
   <testcase name="AuthGuard should be created" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).AuthGuard"/>
-  <testcase name="NewUserService verifyExistingEmail&#xA;      should call authService.getByUserEmail with the provided email when verifyExistingEmail is called" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserService"/>
-  <testcase name="NewUserService should be created" time="0.002" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserService"/>
+  <testcase name="Password strength validator should return validation error when password matches username" time="0.023" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="Password strength validator should return null when password is different from username" time="0.009" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="TopBarComponent logout should handle successful logout" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).TopBarComponent"/>
+  <testcase name="TopBarComponent should create" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).TopBarComponent"/>
+  <testcase name="TopBarComponent should display username when user is logged in" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).TopBarComponent"/>
   <testcase name="NewUserService registerNewUser &#xA;      should call authService.registerUser with the provided newUser when registerNewUser is called" time="0.002" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserService"/>
-  <testcase name="NewUserService verifyExistingUser &#xA;      should call authService.getByUserName with the provided userName when verifyExistingUser is called" time="0.001" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserService"/>
-  <testcase name="AppComponent should have as title 'organic-shop'" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).AppComponent"/>
-  <testcase name="AppComponent should create the app" time="0.008" classname="Firefox_124_0_(Ubuntu_0_0_0).AppComponent"/>
-  <testcase name="UserListingComponent should create" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).UserListingComponent"/>
-  <testcase name="ManageItemComponent editItem should navigate to edit update page with chosen category and action" time="0.02" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent deleteItem should send item to delete function in the service" time="0.009" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent addItem should navigate to add update page with chosen category and action" time="0.015" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent triggerProvideList should handle error during subscription" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent triggerProvideList should set inventoryItems$ and selectedItem on successful subscription" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent selectItem should select item and store in the injectable variable" time="0.009" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent onModalChangeDeleteItem should display Delete Item Icon and Message When Modal event is dispatched" time="0.008" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent should create" time="0.008" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent searchItem should handle error during subscription" time="0.009" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent deleteItem should handle error in case of something has gone wrong" time="0.009" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="ManageItemComponent searchItem should bring items according to search results" time="0.016" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemComponent"/>
-  <testcase name="AuthService should be created" time="0.002" classname="Firefox_124_0_(Ubuntu_0_0_0).AuthService"/>
-  <testcase name="PriceZeroValueValidator should return null if amount is not 0 or 0.0" time="0.001" classname="Firefox_124_0_(Ubuntu_0_0_0).PriceZeroValueValidator"/>
-  <testcase name="PriceZeroValueValidator should return null if amount is empty" time="0.002" classname="Firefox_124_0_(Ubuntu_0_0_0).PriceZeroValueValidator"/>
-  <testcase name="PriceZeroValueValidator should return { priceZeroValue: true } if amount is 0" time="0" classname="Firefox_124_0_(Ubuntu_0_0_0).PriceZeroValueValidator"/>
-  <testcase name="PriceZeroValueValidator should return { priceZeroValue: true } if amount is 0.0" time="0.001" classname="Firefox_124_0_(Ubuntu_0_0_0).PriceZeroValueValidator"/>
+  <testcase name="NewUserService verifyExistingUser &#xA;      should call authService.getByUserName with the provided userName when verifyExistingUser is called" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserService"/>
+  <testcase name="NewUserService should be created" time="0.002" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserService"/>
+  <testcase name="NewUserService verifyExistingEmail&#xA;      should call authService.getByUserEmail with the provided email when verifyExistingEmail is called" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserService"/>
+  <testcase name="ModalService should be created" time="0.001" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalService"/>
+  <testcase name="NewUserComponent should create" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password is safe enough" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password and password confirmation match" time="0.015" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if user name is filled" time="0.014" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if birthday field is filled" time="0.014" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should disable submit button when form is invalid" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if date is not future date" time="0.019" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should clear the form when the clear button is clicked" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should call onModalChangeThereWasAnError when error comes from the server" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if fullname field is filled" time="0.014" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent registerNewUser should register a new user" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if email is valid" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if segment field is filled" time="0.014" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if email field is filled" time="0.014" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if role field is filled" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if user is not under 18" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should navigate to home page when the router link is clicked" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password field is filled" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="NewUserComponent should validate if password is different from username" time="0.017" classname="Firefox_124_0_(Ubuntu_0_0_0).NewUserComponent"/>
+  <testcase name="ManageItemsComponent should create" time="0.035" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsComponent"/>
+  <testcase name="ManageItemsComponent gotoCategory navigate to &quot;/manage-item&quot; with category id and set services correctly" time="0.018" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsComponent"/>
+  <testcase name="ManageItemsComponent should check if go back button redirects user to home" time="0.021" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsComponent"/>
+  <testcase name="UserExistsService should be created" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService"/>
+  <testcase name="UserExistsService emailExists should return null if email does not exist" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService emailExists"/>
+  <testcase name="UserExistsService emailExists should return error if email exists" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService emailExists"/>
+  <testcase name="UserExistsService userExists should return error if user exists" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService userExists"/>
+  <testcase name="UserExistsService userExists should return null if user does not exist" time="0.002" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService userExists"/>
   <testcase name="ItemExistsService itemExists should return a validator function" time="0.002" classname="Firefox_124_0_(Ubuntu_0_0_0).ItemExistsService"/>
   <testcase name="ItemExistsService should be created" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).ItemExistsService"/>
-  <testcase name="AddUpdateItemService getCatId should return inventory items array" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
-  <testcase name="AddUpdateItemService getAction should return action" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
-  <testcase name="AddUpdateItemService getCatId should return category ID" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
-  <testcase name="AddUpdateItemService getCatLabel should return category label" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
-  <testcase name="AddUpdateItemService allItems should return items for a given category ID" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
-  <testcase name="AddUpdateItemService getSelectedItem should return selected item" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
-  <testcase name="AddUpdateItemService should be created" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).AddUpdateItemService"/>
-  <testcase name="ManageItemsService setChosenCategory and &#xA;      getChosenCategory &#xA;      should set categories successfully" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsService"/>
-  <testcase name="ManageItemsService should be created" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsService"/>
+  <testcase name="AppComponent should have as title 'organic-shop'" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.008" classname="Firefox_124_0_(Ubuntu_0_0_0).AppComponent"/>
+  <testcase name="Password strength validator should return validation error when password does not pass the password regex criteria" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="Password strength validator should return validation error when password length is under 8" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="Password strength validator should return null when password length is 8 or more and pass the password regex criteria" time="0.008" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
+  <testcase name="ManageItemsService setChosenCategory and &#xA;      getChosenCategory &#xA;      should set categories successfully" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsService"/>
+  <testcase name="ManageItemsService should be created" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsService"/>
   <testcase name="ManageItemsService getCategories should fetch categories successfully" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsService"/>
-  <testcase name="ModalComponent should create" time="0.015" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalComponent"/>
-  <testcase name="ModalComponent yesAnswer should call addUpdateItemService.deleteItem and close modal when icon is DELETE_ICON" time="0.007" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalComponent"/>
-  <testcase name="ModalComponent yesAnswer should navigate and close modal when icon is CHECK_ICON" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalComponent"/>
-  <testcase name="ModalComponent closeModal should close modal and emit changedModal event" time="0.007" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalComponent"/>
-  <testcase name="Password strength validator should return null when password is different from username" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
-  <testcase name="Password strength validator should return validation error when password matches username" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
-  <testcase name="BrlPipe create an instance" time="0" classname="Firefox_124_0_(Ubuntu_0_0_0).BrlPipe"/>
-  <testcase name="BrlPipe transform should format the value correctly" time="0.001" classname="Firefox_124_0_(Ubuntu_0_0_0).BrlPipe"/>
-  <testcase name="BrlPipe transform should handle negative values correctly" time="0.001" classname="Firefox_124_0_(Ubuntu_0_0_0).BrlPipe"/>
-  <testcase name="ModalService should be created" time="0.002" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalService"/>
-  <testcase name="ManageItemsComponent gotoCategory navigate to &quot;/manage-item&quot; with category id and set services correctly" time="0.058" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsComponent"/>
-  <testcase name="ManageItemsComponent should check if go back button redirects user to home" time="0.025" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsComponent"/>
-  <testcase name="ManageItemsComponent should create" time="0.028" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemsComponent"/>
-  <testcase name="SalesComponent should create" time="0.008" classname="Firefox_124_0_(Ubuntu_0_0_0).SalesComponent"/>
-  <testcase name="TopBarComponent should display username when user is logged in" time="0.015" classname="Firefox_124_0_(Ubuntu_0_0_0).TopBarComponent"/>
-  <testcase name="TopBarComponent should create" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).TopBarComponent"/>
-  <testcase name="TopBarComponent logout should handle successful logout" time="0.009" classname="Firefox_124_0_(Ubuntu_0_0_0).TopBarComponent"/>
-  <testcase name="ManageItemService should be created" time="0.007" classname="Firefox_124_0_(Ubuntu_0_0_0).ManageItemService"/>
-  <testcase name="Password strength validator should return null when password length is 8 or more and pass the password regex criteria" time="0.017" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
-  <testcase name="Password strength validator should return validation error when password length is under 8" time="0.017" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
-  <testcase name="Password strength validator should return validation error when password does not pass the password regex criteria" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).Password strength validator"/>
-  <testcase name="UserExistsService should be created" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService"/>
-  <testcase name="UserExistsService userExists should return null if user does not exist" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService userExists"/>
-  <testcase name="UserExistsService userExists should return error if user exists" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService userExists"/>
-  <testcase name="UserExistsService emailExists should return error if email exists" time="0.007" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService emailExists"/>
-  <testcase name="UserExistsService emailExists should return null if email does not exist" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).UserExistsService emailExists"/>
-  <testcase name="UserService should be created" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).UserService"/>
-  <testcase name="Age validator should validate age" time="0.015" classname="Firefox_124_0_(Ubuntu_0_0_0).Age validator"/>
-  <testcase name="LoginComponent should keep form enter button disabled when form is not valid" time="0.024" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
-  <testcase name="LoginComponent should clear inputs when reset button is clicked" time="0.012" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
-  <testcase name="LoginComponent enterLogin should handle successful login" time="0.016" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
-  <testcase name="LoginComponent should navigate to home page when the router link is clicked" time="0.016" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
-  <testcase name="LoginComponent should create" time="0.026" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
-  <testcase name="HomeComponent should check if manage items button redirects to its respective page" time="0.033" classname="Firefox_124_0_(Ubuntu_0_0_0).HomeComponent"/>
-  <testcase name="HomeComponent should check if manage items buttons redirects to its respective page" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).HomeComponent"/>
-  <testcase name="HomeComponent should check if sales button redirects to its respective page" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).HomeComponent"/>
-  <testcase name="HomeComponent should create" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).HomeComponent"/>
-  <testcase name="LoginGuard should be created" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginGuard"/>
-  <testcase name="TokenService should be created" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).TokenService"/>
-  <testcase name="FooterComponent should create" time="0.008" classname="Firefox_124_0_(Ubuntu_0_0_0).FooterComponent"/>
+  <testcase name="PriceZeroValueValidator should return { priceZeroValue: true } if amount is 0" time="0" classname="Firefox_124_0_(Ubuntu_0_0_0).PriceZeroValueValidator"/>
+  <testcase name="PriceZeroValueValidator should return null if amount is not 0 or 0.0" time="0.001" classname="Firefox_124_0_(Ubuntu_0_0_0).PriceZeroValueValidator"/>
+  <testcase name="PriceZeroValueValidator should return null if amount is empty" time="0" classname="Firefox_124_0_(Ubuntu_0_0_0).PriceZeroValueValidator"/>
+  <testcase name="PriceZeroValueValidator should return { priceZeroValue: true } if amount is 0.0" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).PriceZeroValueValidator"/>
+  <testcase name="UserListingComponent should create" time="0.005" classname="Firefox_124_0_(Ubuntu_0_0_0).UserListingComponent"/>
+  <testcase name="FooterComponent should create" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).FooterComponent"/>
+  <testcase name="HomeComponent should create" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).HomeComponent"/>
+  <testcase name="HomeComponent should check if manage items buttons redirects to its respective page" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).HomeComponent"/>
+  <testcase name="HomeComponent should check if sales button redirects to its respective page" time="0.006" classname="Firefox_124_0_(Ubuntu_0_0_0).HomeComponent"/>
+  <testcase name="HomeComponent should check if manage items button redirects to its respective page" time="0.009" classname="Firefox_124_0_(Ubuntu_0_0_0).HomeComponent"/>
+  <testcase name="LoginComponent enterLogin should handle successful login" time="0.024" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should navigate to home page when the router link is clicked" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should clear inputs when reset button is clicked" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should keep form enter button disabled when form is not valid" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should create" time="0.013" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginComponent"/>
+  <testcase name="ModalComponent closeModal should close modal and emit changedModal event" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalComponent"/>
+  <testcase name="ModalComponent yesAnswer should call addUpdateItemService.deleteItem and close modal when icon is DELETE_ICON" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalComponent"/>
+  <testcase name="ModalComponent yesAnswer should navigate and close modal when icon is CHECK_ICON" time="0.007" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalComponent"/>
+  <testcase name="ModalComponent should create" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).ModalComponent"/>
+  <testcase name="Confirm password validator should return validation error when passwords do not match" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).Confirm password validator"/>
+  <testcase name="Confirm password validator should return null when passwords match" time="0.01" classname="Firefox_124_0_(Ubuntu_0_0_0).Confirm password validator"/>
+  <testcase name="LoginService should be created" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginService"/>
+  <testcase name="LoginService should authenticate user" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginService"/>
+  <testcase name="SalesComponent should create" time="0.007" classname="Firefox_124_0_(Ubuntu_0_0_0).SalesComponent"/>
+  <testcase name="Age validator should validate age" time="0.011" classname="Firefox_124_0_(Ubuntu_0_0_0).Age validator"/>
+  <testcase name="AuthService should be created" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).AuthService"/>
+  <testcase name="LoginGuard should be created" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).LoginGuard"/>
+  <testcase name="TokenService should be created" time="0.004" classname="Firefox_124_0_(Ubuntu_0_0_0).TokenService"/>
+  <testcase name="UserService should be created" time="0.003" classname="Firefox_124_0_(Ubuntu_0_0_0).UserService"/>
   <system-out>
-    <![CDATA[Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+    <![CDATA[Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Categories! >>', Error: [object Object]
+Error: [object Object]
+    at errorFactory (http://localhost:9876/_karma_webpack_/webpack:/src/app/manage-items/manage-items.service.ts:26:44)
+    at Observable._subscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
+    at Observable._trySubscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
+    at cb (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
+    at errorContext (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
+    at Observable.subscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
+    at onError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:14:31)
+    at OperatorSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/OperatorSubscriber.js:23:21)
+    at OperatorSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Subscriber.js:40:18)
+    at source.subscribe._a (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/tap.js:28:28)
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage items unsubscribed'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '0'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '0,0'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '10.0'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'New item >>', Object{itemName: 'Test Item', itemPrice: 10, itemType: 'un'}
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'New item >>', Object{itemName: 'Test Item', itemPrice: 10, itemType: 'un'}
+,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Item added successfully!'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Update completed!'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '10,00'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '-5,00'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: undefined
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Mock user:', [Object{userBirthday: '1999-01-04T03:00:00.000Z', userEmail: 'teste@organicshop.com', userFullName: 'Teste Full Name', userName: 'testUser', userRole: 'Test Role', userSegment: 'Teste', __v: 0, _id: '11111111111111'}]
+,Chrome Headless 120.0.6099.109 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Current URL', '/home'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'template', <div id="root45" _nghost-a-c50="" ng-version="15.2.1"><header _ngcontent-a-c50="" class="sticky-top"><nav _ngcontent-a-c50="" class="navbar navbar-light logged-in-top-bar" ng-reflect-ng-class="[object Object]"><div _ngcontent-a-c50="" class="logged-in-wrapper"><div _ngcontent-a-c50="" class="logged-in-navbar"><div _ngcontent-a-c50=""><a _ngcontent-a-c50="" class="navbar-brand"><img _ngcontent-a-c50="" src="assets/img/organic-shop.svg" alt="organic-shop" class="logo-img"></a></div><div _ngcontent-a-c50="" class="user-wrapper"><i _ngcontent-a-c50="" class="fa fa-user mr-1"></i><a _ngcontent-a-c50="" class="mr-2">testUser</a><i _ngcontent-a-c50="" aria-hidden="true" class="fa fa-sign-out mr-05"></i><a _ngcontent-a-c50="" class="logout">Sair</a></div></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}--></nav><!--container--></header></div>
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: null
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: Object{status: 500, message: 'Internal Server Error'}
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'API Response:', Object{userName: 'Test User Name', userEmail: 'testemail@test.com', userPassword: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA==', userFullName: 'User Test Name', userBirthday: Sun Dec 31 1989 21:00:00 GMT-0300 (Falkland Islands Summer Time), userSegment: 'TI', userRole: 'Desenvolvedor Fullstack'}
+,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Register completed!'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
+6514/allItems/</<@http://localhost:9876/_karma_webpack_/main.js:1950:205
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:47
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/<@http://localhost:9876/_karma_webpack_/vendor.js:1613:21
+1944/operate/</<@http://localhost:9876/_karma_webpack_/vendor.js:3549:18
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:42
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2061:25
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+resub@http://localhost:9876/_karma_webpack_/vendor.js:2072:15
+8504/retry/</subscribeForRetry/innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:2087:13
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:41
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/</innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:1605:23
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+9337/tap/</<@http://localhost:9876/_karma_webpack_/vendor.js:2473:18
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+onError@http://localhost:9876/_karma_webpack_/vendor.js:15432:18
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:171
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:3983:33
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63496:22
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:285:81
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63796:25
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+runTask@http://localhost:9876/_karma_webpack_/polyfills.js:184:37
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:459:26
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:1610:12
+globalCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1640:31
+globalZoneAwareCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1671:12
+
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Item Id >>', Object{_id: '11111', itemPrice: 7.5, itemName: 'Beterraba', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
+6514/allItems/</<@http://localhost:9876/_karma_webpack_/main.js:1950:205
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:47
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/<@http://localhost:9876/_karma_webpack_/vendor.js:1613:21
+1944/operate/</<@http://localhost:9876/_karma_webpack_/vendor.js:3549:18
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:42
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2061:25
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+resub@http://localhost:9876/_karma_webpack_/vendor.js:2072:15
+8504/retry/</subscribeForRetry/innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:2087:13
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:41
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/</innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:1605:23
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+9337/tap/</<@http://localhost:9876/_karma_webpack_/vendor.js:2473:18
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+onError@http://localhost:9876/_karma_webpack_/vendor.js:15432:18
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:171
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:3983:33
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63496:22
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:285:81
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63796:25
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+runTask@http://localhost:9876/_karma_webpack_/polyfills.js:184:37
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:459:26
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:1610:12
+globalCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1640:31
+globalZoneAwareCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1671:12
+
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: [Object{_id: '33333', itemPrice: 4.5, itemName: 'Banana Nanica', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}, Object{_id: '4444', itemPrice: 6.5, itemName: 'Banana Prata', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}]
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'FOUND ITEMS >>', [Object{_id: '33333', itemPrice: 4.5, itemName: 'Banana Nanica', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}, Object{_id: '4444', itemPrice: 6.5, itemName: 'Banana Prata', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}]
+,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Items were successfully gotten!'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Warning: the currency pipe has been changed in Angular v5. The symbolDisplay option (third parameter) is now a string instead of a boolean. The accepted values are "code", "symbol" or "symbol-narrow".'
+,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Warning: the currency pipe has been changed in Angular v5. The symbolDisplay option (third parameter) is now a string instead of a boolean. The accepted values are "code", "symbol" or "symbol-narrow".'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
+6514/allItems/</<@http://localhost:9876/_karma_webpack_/main.js:1950:205
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:47
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/<@http://localhost:9876/_karma_webpack_/vendor.js:1613:21
+1944/operate/</<@http://localhost:9876/_karma_webpack_/vendor.js:3549:18
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:42
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2061:25
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+resub@http://localhost:9876/_karma_webpack_/vendor.js:2072:15
+8504/retry/</subscribeForRetry/innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:2087:13
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:41
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/</innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:1605:23
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+9337/tap/</<@http://localhost:9876/_karma_webpack_/vendor.js:2473:18
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+onError@http://localhost:9876/_karma_webpack_/vendor.js:15432:18
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:171
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:3983:33
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63496:22
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:285:81
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63796:25
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+runTask@http://localhost:9876/_karma_webpack_/polyfills.js:184:37
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:459:26
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:1610:12
+globalCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1640:31
+globalZoneAwareCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1671:12
+
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Categories were successfully gotten!'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
+6514/allItems/</<@http://localhost:9876/_karma_webpack_/main.js:1950:205
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:47
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/<@http://localhost:9876/_karma_webpack_/vendor.js:1613:21
+1944/operate/</<@http://localhost:9876/_karma_webpack_/vendor.js:3549:18
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:42
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2061:25
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+resub@http://localhost:9876/_karma_webpack_/vendor.js:2072:15
+8504/retry/</subscribeForRetry/innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:2087:13
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:41
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/</innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:1605:23
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+9337/tap/</<@http://localhost:9876/_karma_webpack_/vendor.js:2473:18
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+onError@http://localhost:9876/_karma_webpack_/vendor.js:15432:18
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:171
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:3983:33
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63496:22
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:285:81
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63796:25
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+runTask@http://localhost:9876/_karma_webpack_/polyfills.js:184:37
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:459:26
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:1610:12
+globalCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1640:31
+globalZoneAwareCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1671:12
+
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Item deleted!'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
+6514/allItems/</<@http://localhost:9876/_karma_webpack_/main.js:1950:205
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:47
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/<@http://localhost:9876/_karma_webpack_/vendor.js:1613:21
+1944/operate/</<@http://localhost:9876/_karma_webpack_/vendor.js:3549:18
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:42
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2061:25
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+resub@http://localhost:9876/_karma_webpack_/vendor.js:2072:15
+8504/retry/</subscribeForRetry/innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:2087:13
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:41
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/</innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:1605:23
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+9337/tap/</<@http://localhost:9876/_karma_webpack_/vendor.js:2473:18
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+onError@http://localhost:9876/_karma_webpack_/vendor.js:15432:18
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:171
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:3983:33
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63496:22
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:285:81
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63796:25
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+runTask@http://localhost:9876/_karma_webpack_/polyfills.js:184:37
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:459:26
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:1610:12
+globalCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1640:31
+globalZoneAwareCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1671:12
+
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
+6514/allItems/</<@http://localhost:9876/_karma_webpack_/main.js:1950:205
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:47
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/<@http://localhost:9876/_karma_webpack_/vendor.js:1613:21
+1944/operate/</<@http://localhost:9876/_karma_webpack_/vendor.js:3549:18
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:42
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2061:25
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+subscribeForRetry@http://localhost:9876/_karma_webpack_/vendor.js:2096:9
+resub@http://localhost:9876/_karma_webpack_/vendor.js:2072:15
+8504/retry/</subscribeForRetry/innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:2087:13
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:41
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/</innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:1605:23
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+9337/tap/</<@http://localhost:9876/_karma_webpack_/vendor.js:2473:18
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+onError@http://localhost:9876/_karma_webpack_/vendor.js:15432:18
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:171
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:3983:33
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63496:22
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:285:81
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63796:25
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+runTask@http://localhost:9876/_karma_webpack_/polyfills.js:184:37
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:459:26
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:1610:12
+globalCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1640:31
+globalZoneAwareCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1671:12
+
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'this.modalService.openModal >>>', true
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
+,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Update completed!'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'New item >>', Object{itemName: 'Test Item', itemPrice: 10, itemType: 'un'}
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'New item >>', Object{itemName: 'Test Item', itemPrice: 10, itemType: 'un'}
+,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Item added successfully!'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: '10,00'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: '-5,00'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: undefined
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Mock user:', [Object{userBirthday: '1999-01-04T03:00:00.000Z', userEmail: 'teste@organicshop.com', userFullName: 'Teste Full Name', userName: 'testUser', userRole: 'Test Role', userSegment: 'Teste', __v: 0, _id: '11111111111111'}]
+,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Current URL', '/home'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'template', <div id="root26" _nghost-a-c50="" ng-version="15.2.1"><header _ngcontent-a-c50="" class="sticky-top"><nav _ngcontent-a-c50="" class="navbar navbar-light logged-in-top-bar" ng-reflect-ng-class="[object Object]"><div _ngcontent-a-c50="" class="logged-in-wrapper"><div _ngcontent-a-c50="" class="logged-in-navbar"><div _ngcontent-a-c50=""><a _ngcontent-a-c50="" class="navbar-brand"><img _ngcontent-a-c50="" src="assets/img/organic-shop.svg" alt="organic-shop" class="logo-img"></a></div><div _ngcontent-a-c50="" class="user-wrapper"><i _ngcontent-a-c50="" class="fa fa-user mr-1"></i><a _ngcontent-a-c50="" class="mr-2">testUser</a><i _ngcontent-a-c50="" aria-hidden="true" class="fa fa-sign-out mr-05"></i><a _ngcontent-a-c50="" class="logout">Sair</a></div></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}--></nav><!--container--></header></div>
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: null
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: Object{status: 500, message: 'Internal Server Error'}
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
@@ -118,11 +634,6 @@
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: Object{status: 500, message: 'Internal Server Error'}
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: null
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
@@ -141,664 +652,252 @@
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Item deleted!'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-6514/allItems/</<@http://localhost:9877/_karma_webpack_/main.js:1697:205
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:47
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/<@http://localhost:9877/_karma_webpack_/vendor.js:1613:21
-1944/operate/</<@http://localhost:9877/_karma_webpack_/vendor.js:3549:18
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:42
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2061:25
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-resub@http://localhost:9877/_karma_webpack_/vendor.js:2072:15
-8504/retry/</subscribeForRetry/innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:2087:13
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:41
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/</innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:1605:23
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-9337/tap/</<@http://localhost:9877/_karma_webpack_/vendor.js:2473:18
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-onError@http://localhost:9877/_karma_webpack_/vendor.js:15432:18
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:171
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:3983:33
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63496:22
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:285:81
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63796:25
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-runTask@http://localhost:9877/_karma_webpack_/polyfills.js:184:37
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:459:26
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:1610:12
-globalCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1640:31
-globalZoneAwareCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1671:12
-
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-6514/allItems/</<@http://localhost:9877/_karma_webpack_/main.js:1697:205
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:47
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/<@http://localhost:9877/_karma_webpack_/vendor.js:1613:21
-1944/operate/</<@http://localhost:9877/_karma_webpack_/vendor.js:3549:18
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:42
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2061:25
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-resub@http://localhost:9877/_karma_webpack_/vendor.js:2072:15
-8504/retry/</subscribeForRetry/innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:2087:13
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:41
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/</innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:1605:23
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-9337/tap/</<@http://localhost:9877/_karma_webpack_/vendor.js:2473:18
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-onError@http://localhost:9877/_karma_webpack_/vendor.js:15432:18
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:171
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:3983:33
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63496:22
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:285:81
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63796:25
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-runTask@http://localhost:9877/_karma_webpack_/polyfills.js:184:37
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:459:26
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:1610:12
-globalCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1640:31
-globalZoneAwareCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1671:12
-
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Categories were successfully gotten!'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-6514/allItems/</<@http://localhost:9877/_karma_webpack_/main.js:1697:205
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:47
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/<@http://localhost:9877/_karma_webpack_/vendor.js:1613:21
-1944/operate/</<@http://localhost:9877/_karma_webpack_/vendor.js:3549:18
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:42
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2061:25
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-resub@http://localhost:9877/_karma_webpack_/vendor.js:2072:15
-8504/retry/</subscribeForRetry/innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:2087:13
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:41
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/</innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:1605:23
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-9337/tap/</<@http://localhost:9877/_karma_webpack_/vendor.js:2473:18
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-onError@http://localhost:9877/_karma_webpack_/vendor.js:15432:18
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:171
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:3983:33
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63496:22
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:285:81
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63796:25
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-runTask@http://localhost:9877/_karma_webpack_/polyfills.js:184:37
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:459:26
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:1610:12
-globalCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1640:31
-globalZoneAwareCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1671:12
-
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Item Id >>', Object{_id: '11111', itemPrice: 7.5, itemName: 'Beterraba', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'this.modalService.openModal >>>', true
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-6514/allItems/</<@http://localhost:9877/_karma_webpack_/main.js:1697:205
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:47
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/<@http://localhost:9877/_karma_webpack_/vendor.js:1613:21
-1944/operate/</<@http://localhost:9877/_karma_webpack_/vendor.js:3549:18
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:42
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2061:25
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-resub@http://localhost:9877/_karma_webpack_/vendor.js:2072:15
-8504/retry/</subscribeForRetry/innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:2087:13
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:41
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/</innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:1605:23
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-9337/tap/</<@http://localhost:9877/_karma_webpack_/vendor.js:2473:18
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-onError@http://localhost:9877/_karma_webpack_/vendor.js:15432:18
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:171
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:3983:33
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63496:22
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:285:81
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63796:25
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-runTask@http://localhost:9877/_karma_webpack_/polyfills.js:184:37
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:459:26
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:1610:12
-globalCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1640:31
-globalZoneAwareCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1671:12
-
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-6514/allItems/</<@http://localhost:9877/_karma_webpack_/main.js:1697:205
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:47
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/<@http://localhost:9877/_karma_webpack_/vendor.js:1613:21
-1944/operate/</<@http://localhost:9877/_karma_webpack_/vendor.js:3549:18
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:42
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2061:25
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-resub@http://localhost:9877/_karma_webpack_/vendor.js:2072:15
-8504/retry/</subscribeForRetry/innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:2087:13
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:41
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/</innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:1605:23
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-9337/tap/</<@http://localhost:9877/_karma_webpack_/vendor.js:2473:18
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-onError@http://localhost:9877/_karma_webpack_/vendor.js:15432:18
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:171
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:3983:33
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63496:22
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:285:81
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63796:25
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-runTask@http://localhost:9877/_karma_webpack_/polyfills.js:184:37
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:459:26
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:1610:12
-globalCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1640:31
-globalZoneAwareCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1671:12
-
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: [Object{_id: '33333', itemPrice: 4.5, itemName: 'Banana Nanica', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}, Object{_id: '4444', itemPrice: 6.5, itemName: 'Banana Prata', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}]
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'FOUND ITEMS >>', [Object{_id: '33333', itemPrice: 4.5, itemName: 'Banana Nanica', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}, Object{_id: '4444', itemPrice: 6.5, itemName: 'Banana Prata', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}]
-,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Items were successfully gotten!'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Warning: the currency pipe has been changed in Angular v5. The symbolDisplay option (third parameter) is now a string instead of a boolean. The accepted values are "code", "symbol" or "symbol-narrow".'
-,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Warning: the currency pipe has been changed in Angular v5. The symbolDisplay option (third parameter) is now a string instead of a boolean. The accepted values are "code", "symbol" or "symbol-narrow".'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-6514/allItems/</<@http://localhost:9877/_karma_webpack_/main.js:1697:205
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:47
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/<@http://localhost:9877/_karma_webpack_/vendor.js:1613:21
-1944/operate/</<@http://localhost:9877/_karma_webpack_/vendor.js:3549:18
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:42
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2061:25
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-subscribeForRetry@http://localhost:9877/_karma_webpack_/vendor.js:2096:9
-resub@http://localhost:9877/_karma_webpack_/vendor.js:2072:15
-8504/retry/</subscribeForRetry/innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:2087:13
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:41
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/</innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:1605:23
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-9337/tap/</<@http://localhost:9877/_karma_webpack_/vendor.js:2473:18
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-onError@http://localhost:9877/_karma_webpack_/vendor.js:15432:18
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:171
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:3983:33
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63496:22
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:285:81
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63796:25
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-runTask@http://localhost:9877/_karma_webpack_/polyfills.js:184:37
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:459:26
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:1610:12
-globalCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1640:31
-globalZoneAwareCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1671:12
-
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: '10.0'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: '0'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: '0,0'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: undefined
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: [Object{catId: 'cat-food', categoryName: 'Alimentação'}, Object{catId: 'cat-health', categoryName: 'Saúde e higiene'}, Object{catId: 'cat-sup', categoryName: 'Suplementos'}, Object{catId: 'cat-beauty', categoryName: 'Beleza e estética'}]
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Item >>', Object{_id: '11111', itemPrice: 7.5, itemName: 'Beterraba', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}
-,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Item was deleted!'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: '10,00'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: '-5,00'
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Categories! >>', Error: [object Object]
-4065/getCategories/</<@http://localhost:9877/_karma_webpack_/main.js:2739:375
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:47
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/</innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:1605:23
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-9337/tap/</<@http://localhost:9877/_karma_webpack_/vendor.js:2473:18
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-onError@http://localhost:9877/_karma_webpack_/vendor.js:15432:18
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:171
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:4851:23
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:3981:33
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63496:22
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:285:81
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63796:25
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-runTask@http://localhost:9877/_karma_webpack_/polyfills.js:184:37
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:459:26
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:1610:12
-globalCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1640:31
-globalZoneAwareCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1671:12
+4065/getCategories/</<@http://localhost:9876/_karma_webpack_/main.js:2992:375
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:47
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/</innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:1605:23
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+9337/tap/</<@http://localhost:9876/_karma_webpack_/vendor.js:2473:18
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+onError@http://localhost:9876/_karma_webpack_/vendor.js:15432:18
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:171
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:4851:23
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:3981:33
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63496:22
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:285:81
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63796:25
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+runTask@http://localhost:9876/_karma_webpack_/polyfills.js:184:37
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:459:26
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:1610:12
+globalCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1640:31
+globalZoneAwareCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1671:12
 
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage items unsubscribed'
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Categories! >>', Error: [object Object]
-4065/getCategories/</<@http://localhost:9877/_karma_webpack_/main.js:2739:375
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:47
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/</innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:1605:23
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-9337/tap/</<@http://localhost:9877/_karma_webpack_/vendor.js:2473:18
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-onError@http://localhost:9877/_karma_webpack_/vendor.js:15432:18
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:171
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:4851:23
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:3981:33
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63496:22
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:285:81
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63796:25
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-runTask@http://localhost:9877/_karma_webpack_/polyfills.js:184:37
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:459:26
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:1610:12
-globalCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1640:31
-globalZoneAwareCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1671:12
+4065/getCategories/</<@http://localhost:9876/_karma_webpack_/main.js:2992:375
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:47
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/</innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:1605:23
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+9337/tap/</<@http://localhost:9876/_karma_webpack_/vendor.js:2473:18
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+onError@http://localhost:9876/_karma_webpack_/vendor.js:15432:18
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:171
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:4851:23
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:3981:33
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63496:22
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:285:81
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63796:25
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+runTask@http://localhost:9876/_karma_webpack_/polyfills.js:184:37
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:459:26
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:1610:12
+globalCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1640:31
+globalZoneAwareCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1671:12
 
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage items unsubscribed'
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'There was an error in Categories! >>', Error: [object Object]
-4065/getCategories/</<@http://localhost:9877/_karma_webpack_/main.js:2739:375
-init@http://localhost:9877/_karma_webpack_/vendor.js:1464:47
-_trySubscribe@http://localhost:9877/_karma_webpack_/vendor.js:310:19
-833/subscribe/<@http://localhost:9877/_karma_webpack_/vendor.js:304:113
-errorContext@http://localhost:9877/_karma_webpack_/vendor.js:3293:5
-subscribe@http://localhost:9877/_karma_webpack_/vendor.js:299:69
-3158/catchError/</innerSub<@http://localhost:9877/_karma_webpack_/vendor.js:1605:23
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-9337/tap/</<@http://localhost:9877/_karma_webpack_/vendor.js:2473:18
-3945/OperatorSubscriber/this._error<@http://localhost:9877/_karma_webpack_/vendor.js:1548:16
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-_error@http://localhost:9877/_karma_webpack_/vendor.js:634:24
-error@http://localhost:9877/_karma_webpack_/vendor.js:611:12
-onError@http://localhost:9877/_karma_webpack_/vendor.js:15432:18
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:171
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:4851:23
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:3981:33
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63496:22
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:285:81
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-onInvokeTask@http://localhost:9877/_karma_webpack_/vendor.js:63796:25
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:382:54
-runTask@http://localhost:9877/_karma_webpack_/polyfills.js:184:37
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:459:26
-invokeTask@http://localhost:9877/_karma_webpack_/polyfills.js:1610:12
-globalCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1640:31
-globalZoneAwareCallback@http://localhost:9877/_karma_webpack_/polyfills.js:1671:12
+4065/getCategories/</<@http://localhost:9876/_karma_webpack_/main.js:2992:375
+init@http://localhost:9876/_karma_webpack_/vendor.js:1464:47
+_trySubscribe@http://localhost:9876/_karma_webpack_/vendor.js:310:19
+833/subscribe/<@http://localhost:9876/_karma_webpack_/vendor.js:304:113
+errorContext@http://localhost:9876/_karma_webpack_/vendor.js:3293:5
+subscribe@http://localhost:9876/_karma_webpack_/vendor.js:299:69
+3158/catchError/</innerSub<@http://localhost:9876/_karma_webpack_/vendor.js:1605:23
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+9337/tap/</<@http://localhost:9876/_karma_webpack_/vendor.js:2473:18
+3945/OperatorSubscriber/this._error<@http://localhost:9876/_karma_webpack_/vendor.js:1548:16
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+_error@http://localhost:9876/_karma_webpack_/vendor.js:634:24
+error@http://localhost:9876/_karma_webpack_/vendor.js:611:12
+onError@http://localhost:9876/_karma_webpack_/vendor.js:15432:18
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:171
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:4851:23
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:3981:33
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63496:22
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:285:81
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+onInvokeTask@http://localhost:9876/_karma_webpack_/vendor.js:63796:25
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:382:54
+runTask@http://localhost:9876/_karma_webpack_/polyfills.js:184:37
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:459:26
+invokeTask@http://localhost:9876/_karma_webpack_/polyfills.js:1610:12
+globalCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1640:31
+globalZoneAwareCallback@http://localhost:9876/_karma_webpack_/polyfills.js:1671:12
 
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Manage items unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Mock user:', [Object{userBirthday: '1999-01-04T03:00:00.000Z', userEmail: 'teste@organicshop.com', userFullName: 'Teste Full Name', userName: 'testUser', userRole: 'Test Role', userSegment: 'Teste', __v: 0, _id: '11111111111111'}]
-,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Current URL', '/home'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'template', <div id="root46" _nghost-a-c50="" ng-version="15.2.1"><header _ngcontent-a-c50="" class="sticky-top"><nav _ngcontent-a-c50="" class="navbar navbar-light logged-in-top-bar" ng-reflect-ng-class="[object Object]"><div _ngcontent-a-c50="" class="logged-in-wrapper"><div _ngcontent-a-c50="" class="logged-in-navbar"><div _ngcontent-a-c50=""><a _ngcontent-a-c50="" class="navbar-brand"><img _ngcontent-a-c50="" src="assets/img/organic-shop.svg" alt="organic-shop" class="logo-img"></a></div><div _ngcontent-a-c50="" class="user-wrapper"><i _ngcontent-a-c50="" class="fa fa-user mr-1"></i><a _ngcontent-a-c50="" class="mr-2">testUser</a><i _ngcontent-a-c50="" aria-hidden="true" class="fa fa-sign-out mr-05"></i><a _ngcontent-a-c50="" class="logout">Sair</a></div></div><!--bindings={
-  "ng-reflect-ng-if-else": "[object Object]"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "[object Object]"
-}--></nav><!--container--></header></div>
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Item deleted!'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-Error: Error: NG0205: Injector has already been destroyed.
-    at errorFactory (http://localhost:9877/_karma_webpack_/webpack:/src/app/manage-items/add-update-item/add-update-item.service.ts:79:44)
-    at Observable._subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
-    at Observable._trySubscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-    at Observable.subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
-    at init (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:23:27)
-    at OperatorSubscriber.call (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/lift.js:10:28)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:26:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-Error: Error: NG0205: Injector has already been destroyed.
-    at errorFactory (http://localhost:9877/_karma_webpack_/webpack:/src/app/manage-items/add-update-item/add-update-item.service.ts:79:44)
-    at Observable._subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
-    at Observable._trySubscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-    at Observable.subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
-    at init (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:23:27)
-    at OperatorSubscriber.call (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/lift.js:10:28)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:26:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService userExists should return null if user does not exist' has no expectations.'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'this.modalService.openModal >>>', true
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService userExists should return error if user exists' has no expectations.'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService emailExists should return error if email exists' has no expectations.'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: [Object{_id: '33333', itemPrice: 4.5, itemName: 'Banana Nanica', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}, Object{_id: '4444', itemPrice: 6.5, itemName: 'Banana Prata', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}]
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'FOUND ITEMS >>', [Object{_id: '33333', itemPrice: 4.5, itemName: 'Banana Nanica', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}, Object{_id: '4444', itemPrice: 6.5, itemName: 'Banana Prata', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}]
-,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Items were successfully gotten!'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) WARN: 'Warning: the currency pipe has been changed in Angular v5. The symbolDisplay option (third parameter) is now a string instead of a boolean. The accepted values are "code", "symbol" or "symbol-narrow".'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) WARN: 'Warning: the currency pipe has been changed in Angular v5. The symbolDisplay option (third parameter) is now a string instead of a boolean. The accepted values are "code", "symbol" or "symbol-narrow".'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '0'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '10.0'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '0,0'
 ,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService emailExists should return null if email does not exist' has no expectations.'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-Error: Error: NG0205: Injector has already been destroyed.
-    at errorFactory (http://localhost:9877/_karma_webpack_/webpack:/src/app/manage-items/add-update-item/add-update-item.service.ts:79:44)
-    at Observable._subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
-    at Observable._trySubscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-    at Observable.subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
-    at init (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:23:27)
-    at OperatorSubscriber.call (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/lift.js:10:28)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:26:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-Error: Error: NG0205: Injector has already been destroyed.
-    at errorFactory (http://localhost:9877/_karma_webpack_/webpack:/src/app/manage-items/add-update-item/add-update-item.service.ts:79:44)
-    at Observable._subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
-    at Observable._trySubscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-    at Observable.subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
-    at init (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:23:27)
-    at OperatorSubscriber.call (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/lift.js:10:28)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:26:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Item Id >>', Object{_id: '11111', itemPrice: 7.5, itemName: 'Beterraba', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-Error: Error: NG0205: Injector has already been destroyed.
-    at errorFactory (http://localhost:9877/_karma_webpack_/webpack:/src/app/manage-items/add-update-item/add-update-item.service.ts:79:44)
-    at Observable._subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
-    at Observable._trySubscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-    at Observable.subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
-    at init (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:23:27)
-    at OperatorSubscriber.call (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/lift.js:10:28)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:26:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Category Id >>>', 'cat-food'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Categories were successfully gotten!'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage item unsubscribed'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Add Update List! >>', Error: Error: NG0205: Injector has already been destroyed.
-Error: Error: NG0205: Injector has already been destroyed.
-    at errorFactory (http://localhost:9877/_karma_webpack_/webpack:/src/app/manage-items/add-update-item/add-update-item.service.ts:79:44)
-    at Observable._subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
-    at Observable._trySubscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-    at Observable.subscribe (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
-    at init (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:23:27)
-    at OperatorSubscriber.call (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/lift.js:10:28)
-    at cb (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:26:30)
-    at errorContext (http://localhost:9877/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService emailExists should return error if email exists' has no expectations.'
+,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService userExists should return error if user exists' has no expectations.'
+,Firefox 124.0 (Ubuntu 0.0.0) WARN: 'Spec 'UserExistsService userExists should return null if user does not exist' has no expectations.'
 ,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Item >>', Object{_id: '11111', itemPrice: 7.5, itemName: 'Beterraba', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}
 ,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Item was deleted!'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Categories! >>', Error: [object Object]
+Error: [object Object]
+    at errorFactory (http://localhost:9876/_karma_webpack_/webpack:/src/app/manage-items/manage-items.service.ts:26:44)
+    at Observable._subscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
+    at Observable._trySubscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
+    at cb (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
+    at errorContext (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
+    at Observable.subscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
+    at onError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:14:31)
+    at OperatorSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/OperatorSubscriber.js:23:21)
+    at OperatorSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Subscriber.js:40:18)
+    at source.subscribe._a (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/tap.js:28:28)
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage items unsubscribed'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Categories! >>', Error: [object Object]
+Error: [object Object]
+    at errorFactory (http://localhost:9876/_karma_webpack_/webpack:/src/app/manage-items/manage-items.service.ts:26:44)
+    at Observable._subscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
+    at Observable._trySubscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
+    at cb (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
+    at errorContext (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
+    at Observable.subscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
+    at onError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:14:31)
+    at OperatorSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/OperatorSubscriber.js:23:21)
+    at OperatorSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Subscriber.js:40:18)
+    at source.subscribe._a (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/tap.js:28:28)
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage items unsubscribed'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'There was an error in Categories! >>', Error: [object Object]
+Error: [object Object]
+    at errorFactory (http://localhost:9876/_karma_webpack_/webpack:/src/app/manage-items/manage-items.service.ts:26:44)
+    at Observable._subscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/observable/throwError.js:5:51)
+    at Observable._trySubscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:37:25)
+    at cb (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:31:30)
+    at errorContext (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/util/errorContext.js:19:9)
+    at Observable.subscribe (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Observable.js:22:21)
+    at onError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/catchError.js:14:31)
+    at OperatorSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/OperatorSubscriber.js:23:21)
+    at OperatorSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/Subscriber.js:40:18)
+    at source.subscribe._a (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/dist/esm/internal/operators/tap.js:28:28)
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'Manage items unsubscribed'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: undefined
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: [Object{catId: 'cat-food', categoryName: 'Alimentação'}, Object{catId: 'cat-health', categoryName: 'Saúde e higiene'}, Object{catId: 'cat-sup', categoryName: 'Suplementos'}, Object{catId: 'cat-beauty', categoryName: 'Beleza e estética'}]
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: '0'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: '10.0'
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: '0,0'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: Object{status: 500, message: 'Internal Server Error'}
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: 'API Response:', Object{userName: 'Test User Name', userEmail: 'testemail@test.com', userPassword: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA==', userFullName: 'User Test Name', userBirthday: Sun Dec 31 1989 21:00:00 GMT-0300 (Falkland Islands Summer Time), userSegment: 'TI', userRole: 'Desenvolvedor Fullstack'}
+,Chrome Headless 120.0.6099.109 (Linux x86_64) INFO: 'Register completed!'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: Object{user: 'Test User Name', password: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA=='}
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Test User Name', '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA=='
 ,Firefox 124.0 (Ubuntu 0.0.0) LOG: Object{token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c', data: Object{user: 'Test User Name', password: '65e8ad9785213b1dfc4d8c1adb32e11d036b8b7a70c844732d…30089b0df8fb2961a5acb49d6WdBFt+KsgmW/hjbKG1UeqA=='}}
 ,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Login completed!'
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
-,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: [Object{catId: 'cat-food', categoryName: 'Alimentação'}, Object{catId: 'cat-health', categoryName: 'Saúde e higiene'}, Object{catId: 'cat-sup', categoryName: 'Suplementos'}, Object{catId: 'cat-beauty', categoryName: 'Beleza e estética'}]
 ,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '-5,00'
-,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: '10,00'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'user data >>', undefined
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: 'Item >>', Object{_id: '11111', itemPrice: 7.5, itemName: 'Beterraba', itemType: 'Kg', date: Sun Jan 01 2023 00:00:00 GMT-0300 (Falkland Islands Standard Time)}
+,Firefox 124.0 (Ubuntu 0.0.0) INFO: 'Item was deleted!'
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: ''
+,Chrome Headless 120.0.6099.109 (Linux x86_64) LOG: null
+,Firefox 124.0 (Ubuntu 0.0.0) LOG: ''
 
 ]]>
   </system-out>
