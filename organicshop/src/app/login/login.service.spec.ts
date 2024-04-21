@@ -4,14 +4,10 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import { LoginService } from './login.service';
 import { AuthService } from './auth/auth.service';
 import { of } from 'rxjs';
-import { environment } from 'src/environments/environment';
 
 describe('LoginService', () => {
   let service: LoginService;
   let authService: AuthService;
-  let httpMock: HttpTestingController;
-
-  const api: string = environment.apiURL;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -19,11 +15,6 @@ describe('LoginService', () => {
     });
     service = TestBed.inject(LoginService);
     authService = TestBed.inject(AuthService);
-    httpMock = TestBed.inject(HttpTestingController);
-  });
-
-  afterEach(() => {
-    httpMock.verify();
   });
 
   it('should be created', () => {
@@ -31,7 +22,7 @@ describe('LoginService', () => {
   });
 
   it('should authenticate user', fakeAsync(() => {
-    const mockToken = 'mockToken';
+    const mockToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c';
     const user = 'testUser';
     const password = 'testPassword';
     const userData = {

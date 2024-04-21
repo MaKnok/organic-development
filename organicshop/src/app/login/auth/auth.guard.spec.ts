@@ -10,25 +10,30 @@ import { Router } from '@angular/router';
 describe('AuthGuard', () => {
   let guard: AuthGuard;
   let router: Router;
+  let userService:  jasmine.SpyObj<UserService>;
 
   beforeEach(() => {
+
+    const userServiceSpy = jasmine.createSpyObj('UserService', ['isLoggedIn']);
+
     TestBed.configureTestingModule({
       imports: [RouterTestingModule.withRoutes(routes), HttpClientModule],
       providers:[
-        UserService,
+        { provide: UserService, useValue: userServiceSpy },
         AuthGuard,
       ]
     });
     guard = TestBed.inject(AuthGuard);
     router = TestBed.inject(Router);
+    userService = TestBed.inject(UserService) as jasmine.SpyObj<UserService>;
   });
 
   it('should be created', () => {
     expect(guard).toBeTruthy();
   });
 
-  it('should allow navigation to "home" when canActivate returns true', () => {
-    spyOn(guard, 'canActivate').and.returnValue(true); 
+  it('should not allow navigation to "login" when canActivate returns true', () => {
+    userService.isLoggedIn.and.returnValue(true);
     const spy = spyOn(router, 'navigate');
 
     const result = guard.canActivate(null, null);
@@ -36,4 +41,14 @@ describe('AuthGuard', () => {
     expect(result).toBe(true); 
     expect(spy).not.toHaveBeenCalled(); 
   });
+
+  it('should allow navigation to "login" when canActivate returns false', () => {
+    userService.isLoggedIn.and.returnValue(false);
+    const routerSpy = spyOn(router, 'navigate');
+    const result = guard.canActivate(null, null);
+
+    expect(routerSpy).toHaveBeenCalledWith(['']);
+    expect(result).toBe(false);
+
+  })
 });
